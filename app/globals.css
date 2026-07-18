@@ -1,0 +1,184 @@
+@import "tailwindcss";
+
+/* =========================================================================
+   Meridian — premium design system
+   Deep green anchors. Near-white breathes. Terracotta sparks, rarely.
+   ========================================================================= */
+@theme {
+  /* Surfaces — cleaner, near-white with a whisper of warmth */
+  --color-paper: #fcfbf8;        /* primary background */
+  --color-paper-2: #f4f1ea;      /* subtle alternating band */
+  --color-sage: #eaf0e8;         /* soft green tint block */
+  --color-forest: #123227;       /* deep green surfaces / dark sections */
+  --color-forest-2: #0c241b;     /* deeper green (footer, gradients) */
+
+  /* Ink */
+  --color-ink: #16211c;          /* headings + body on light */
+  --color-moss: #566b5d;         /* muted secondary text on light */
+  --color-cream-dim: #c9d4cc;    /* muted text on forest */
+
+  /* Accent — used sparingly */
+  --color-terra: #c25e38;
+  --color-terra-2: #a94d2c;
+
+  /* Lines — lighter for a cleaner, more premium hairline */
+  --color-line: #ece7db;
+  --color-line-strong: #ddd6c6;
+  --color-line-forest: #285040;
+
+  /* Type */
+  --font-display: var(--font-bricolage);
+  --font-body: var(--font-inter);
+  --font-serif: var(--font-newsreader);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ---- base ---- */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  letter-spacing: -0.006em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, .font-display {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.02;
+}
+
+/* ---- layout primitive ---- */
+.container-x {
+  width: 100%;
+  max-width: 80rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+}
+@media (min-width: 768px) {
+  .container-x { padding-inline: 2.5rem; }
+}
+
+/* Eyebrow / section label */
+.eyebrow {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--color-terra);
+}
+.eyebrow::before {
+  content: "";
+  width: 1.75rem;
+  height: 1px;
+  background: currentColor;
+  display: inline-block;
+}
+
+/* Fluid display scale — larger, more confident */
+.display-2xl { font-size: clamp(3rem, 8vw, 6.5rem); }
+.display-xl  { font-size: clamp(2.6rem, 6.2vw, 5rem); }
+.display-lg  { font-size: clamp(2.15rem, 4.6vw, 3.6rem); }
+.display-md  { font-size: clamp(1.55rem, 2.5vw, 2.05rem); }
+
+.lede {
+  font-size: clamp(1.12rem, 1.5vw, 1.32rem);
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--color-moss);
+}
+
+/* Growing terracotta underline on hover */
+.link-underline {
+  background-image: linear-gradient(var(--color-terra), var(--color-terra));
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.3s var(--ease-out-soft);
+}
+.link-underline:hover { background-size: 100% 1.5px; }
+
+/* Pill buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: transform 0.25s var(--ease-out-soft), background-color 0.25s var(--ease-out-soft);
+}
+.btn:active { transform: scale(0.97); }
+.btn-primary {
+  background: var(--color-forest);
+  color: var(--color-paper);
+}
+.btn-primary:hover { background: var(--color-forest-2); }
+.btn-accent {
+  background: var(--color-terra);
+  color: #fff;
+}
+.btn-accent:hover { background: var(--color-terra-2); }
+
+/* Card lift */
+.card {
+  border: 1px solid var(--color-line);
+  background: color-mix(in srgb, var(--color-paper-2) 45%, transparent);
+  border-radius: 1.75rem;
+  transition: transform 0.35s var(--ease-out-soft), box-shadow 0.35s var(--ease-out-soft),
+    border-color 0.35s var(--ease-out-soft), background-color 0.35s var(--ease-out-soft);
+}
+.card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--color-forest) 30%, transparent);
+  box-shadow: 0 24px 48px -28px rgba(18, 50, 39, 0.35);
+  background: var(--color-paper-2);
+}
+
+/* Accessible focus */
+:where(a, button, input, textarea, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-terra);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection { background: var(--color-terra); color: #fff; }
+
+/* Marquee (trusted-by strip) */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 38s linear infinite;
+  will-change: transform;
+}
+.marquee-mask {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
