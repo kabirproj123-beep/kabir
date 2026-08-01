@@ -1,53 +1,151 @@
-# Meridian — study-abroad & admissions consultancy (draft)
+# Maharashtra college discovery & admissions platform
 
-A modern, high-performance marketing site built with **Next.js 16 (App Router)**,
-**TypeScript**, and **Tailwind CSS v4**. Mostly static for speed, with a thin
-admin-editable content layer wired for **Firebase/Firestore**.
+A college discovery site for **Maharashtra only**, built with **Next.js 16 (App
+Router)**, **TypeScript** and **Tailwind CSS v4**. Students browse and compare
+colleges; every tool funnels into a lead form; the client reads the leads at
+`/admin`.
 
-> **Draft note:** brand name, copy, and imagery are polished placeholders,
-> ready to swap for the client's real content. "Meridian" is a stand-in name.
+Modelled on [promoteducation.com](https://promoteducation.com) — same page
+structure and funnel, scoped to one state and backed by our own scraped dataset.
+
+> **Draft note:** "Meridian" is a stand-in brand name. Swap `site` in
+> `lib/content.ts` for the client's real name, phone, email and address.
 
 ## Run it
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build (fully static)
+cp .env.example .env.local     # set ADMIN_PASSWORD at minimum
+npm run dev                    # http://localhost:3000
+npm run build
 ```
 
-## Design system
+The site runs with **no infrastructure at all** — college data ships in the
+repo, and leads fall back to a local file until Firebase is configured.
 
-- **Palette** — forest green (anchor) · warm cream (ground) · terracotta (accent)
-- **Type** — Bricolage Grotesque (display) + Newsreader (body)
-- **Signature** — a route-map motif of study-abroad flight paths (see
-  `components/RouteMap.tsx`), echoed as section dividers
-- Tokens live in `app/globals.css` under `@theme`
+## The data
 
-## What's static vs. editable
+`data/colleges.json` — **192 Maharashtra colleges**, scraped and normalised:
 
-Everything renders statically. The content that the client will be able to edit
-from an admin panel lives in **one place** — `lib/content.ts` — and is read
-through `lib/data.ts::getContent()`:
+| Stream | Colleges |
+| --- | ---: |
+| Management | 65 |
+| Engineering | 64 |
+| Law | 28 |
+| Medical | 23 |
+| Pharmacy | 11 |
+| Architecture | 1 |
 
-- hero headline & intro
-- stats (students placed, universities, countries…)
-- services, process steps, destinations
-- testimonials, FAQs, contact details
+Per college: fees, average and highest package, NIRF rank, NAAC grade,
+ownership, founding year, affiliation, campus size, entrance exams, facilities,
+a full course-and-fee table (447 rows overall), and FAQs (495 overall).
 
-### Going live with Firebase
+Sources, method, normalisation rules and **known gaps** are documented in
+[`scripts/scrape/README.md`](scripts/scrape/README.md). Missing values render as
+a dash — nothing is invented to fill a hole.
 
-1. Copy `.env.example` → `.env.local` and fill in the values.
-2. In `lib/data.ts`, uncomment the Firestore branch — it deep-merges the
-   `content/site` document over the local defaults, so no component changes.
-3. Admin writes go through the server-only `lib/firebaseAdmin.ts` (service
-   account). **The service-account JSON is gitignored and must never be committed.**
+### Photography
 
-## Project structure
+The reference site has photos for **0** of the 165 Maharashtra colleges, so
+images come from Wikipedia/Wikimedia Commons instead — freely licensed, stored
+locally in `public/colleges`, and credited on each page as the licences require.
+
+**28 colleges have a verified photo.** Coverage is deliberately partial: naive
+search matched a *politician* to one college, a *city* to another and a Russian
+university to a third, so `verify_images.py` rejects any match that isn't
+provably the right institution. Colleges without a confident match render a
+deterministic gradient. No photo beats the wrong photo.
+
+## Lead capture
+
+Every gated tool POSTs to `/api/leads`:
+
+| Form | Where |
+| --- | --- |
+| Comparison unlock | Homepage — blurs ROI, placements, campus behind the form |
+| Loan assistance | Homepage EMI calculator — asks family income band |
+| College enquiry | Every college detail page sidebar |
+| Free counselling | `/counselling`, `/study-abroad` |
+| Newsletter | Homepage FAQ block |
+| Contact | `/contact` |
+
+Server-side the route validates the name, normalises the phone to a 10-digit
+Indian mobile (accepts `+91`, spaces), rejects unknown form sources, caps `meta`
+size, rate-limits per IP, and silently drops honeypot submissions.
+
+**Storage:** Firestore `leads` collection when credentials exist, otherwise
+`.data/leads.json` (gitignored — it holds personal data). `/admin` displays which
+mode is live.
+
+## Admin
+
+`/admin` — lead table with counts by status, click-to-call numbers, per-source
+labels, and status updates (new → contacted → converted → closed).
+
+Gated by `ADMIN_PASSWORD` exchanged for an HMAC-signed httpOnly cookie. The
+password is never stored in the browser, and the status-update action re-checks
+auth server-side rather than trusting the page that rendered the button.
+
+## Structure
 
 ```
-app/            layout (fonts, metadata), globals (design tokens), page
-components/     one file per section + Reveal (motion) + RouteMap (signature)
-lib/content.ts  editable content — the admin data source
-lib/data.ts     content resolver (local now, Firestore-ready)
-lib/firebase.ts / firebaseAdmin.ts   client + server SDK wiring
+app/
+  page.tsx              homepage — hero, tools, stream rails, compare, loan, FAQ
+  colleges/             listing with filters + 192 static detail pages
+  rankings/             ranked table per stream
+  courses/  exams/      course directory, entrance-exam reference
+  counselling/          service page + lead form
+  admin/                leads dashboard (password-gated)
+  api/leads/            lead intake
+components/             CollegeCard, CompareTool, LoanCalculator, LeadForm, chrome
+lib/
+  colleges.ts           types, filtering, sorting, INR/LPA formatting
+  catalog.ts            course + exam reference data
+  leads.ts              validation, storage, status
+  adminAuth.ts          password gate
+  content.ts            editable site copy (brand, FAQs, destinations)
+scripts/
+  seed-firestore.mjs    push colleges into Firestore
+  scrape/               the data pipeline + its README
 ```
+
+## Architecture note: why colleges aren't read from Firestore
+
+College data is reference data — it changes a few times a year. Shipping it as
+JSON keeps all 192 detail pages **statically generated**, makes the site fast and
+cheap to host, and means it works before Firebase exists.
+
+Leads are the opposite: written at request time, always to the database.
+
+`node scripts/seed-firestore.mjs` pushes the colleges into Firestore anyway, so
+the client can edit them from an admin UI later; re-export to JSON to publish.
+Run with `--dry` to preview.
+
+## Motion
+
+Restrained by design, and all of it honours `prefers-reduced-motion`:
+
+- **Carousels** — scroll-snap rails for the four stream sections and "similar
+  colleges". Built on native scrolling, so touch momentum works on mobile and it
+  degrades without JS; arrows are enhancement only.
+- **Marquee** — the "students are comparing" strip, pure CSS.
+- **Reveal** — sections fade up once as they enter the viewport.
+- **CountUp** — the stats band counts up on first view.
+
+## Mobile
+
+- A sticky bottom action bar (Call · Colleges · Free counselling), mirroring the
+  reference site — on a phone the lead forms are far down the page, so the
+  primary actions stay reachable.
+- The header CTA collapses on small screens since the bottom bar carries it.
+- Loan-calculator results and comparison selects restack rather than squeeze.
+- Every wide table scrolls inside its own container; the page never scrolls
+  sideways.
+
+## Not built yet
+
+- Editing college records from `/admin` (seed script exists; no UI)
+- CSV export of leads
+- Student reviews (the ratings shown come from source data, 29 of 192 colleges)
+- Cutoffs and exam dates — deliberately omitted, since stale numbers are worse
+  than none

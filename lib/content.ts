@@ -53,11 +53,11 @@ const FOUNDED = 2013;
 
 export const site = {
   name: "Meridian",
-  tagline: "Education & career consultancy",
+  tagline: "Maharashtra college discovery & admissions",
   founded: FOUNDED,
   yearsGuiding: `${new Date().getFullYear() - FOUNDED}+`,
   description:
-    "Meridian guides students through every fork in the road — from choosing a stream to landing the offer. Counselling, test prep, study-abroad, and career mentorship under one roof.",
+    "Compare every major college in Maharashtra — Engineering, Medical, Management and Law. Real fees, placements and rankings, plus free counselling from admission experts.",
   location: "Pune, Maharashtra",
   phone: "+91 90000 00000",
   whatsapp: "+919000000000",
@@ -67,11 +67,36 @@ export const site = {
 };
 
 export const nav = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/services" },
+  { label: "Colleges", href: "/colleges" },
+  { label: "Rankings", href: "/rankings" },
+  { label: "Courses", href: "/courses" },
+  { label: "Exams", href: "/exams" },
+  { label: "Counselling", href: "/counselling" },
   { label: "Study abroad", href: "/study-abroad" },
   { label: "About", href: "/about" },
-  { label: "Contact", href: "/contact" },
+];
+
+/**
+ * Indian universities that run twinning / credit-transfer routes to a foreign
+ * degree. These are NOT part of the Maharashtra college database (they sit in
+ * other states) — they appear only in the study-abroad pathway section.
+ */
+export const abroadPartners = [
+  {
+    name: "Thapar Institute of Engineering & Technology",
+    place: "Patiala, Punjab",
+    note: "2+2 B.E. pathway with Trinity College Dublin",
+  },
+  {
+    name: "SRM Institute of Science & Technology",
+    place: "Chennai, Tamil Nadu",
+    note: "Semester-abroad and credit transfer to US & UK partners",
+  },
+  {
+    name: "Shiv Nadar University",
+    place: "Delhi NCR",
+    note: "Exchange programmes across Europe and North America",
+  },
 ];
 
 // Universities our students have been admitted to — shown as a marquee.

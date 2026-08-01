@@ -2,99 +2,98 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-import { nav, site } from "@/lib/content";
-import { Logo } from "./Logo";
+import { useState } from "react";
+import { site } from "@/lib/content";
+
+const NAV = [
+  { label: "Colleges", href: "/colleges" },
+  { label: "Rankings", href: "/rankings" },
+  { label: "Courses", href: "/courses" },
+  { label: "Exams", href: "/exams" },
+  { label: "Counselling", href: "/counselling" },
+  { label: "Study Abroad", href: "/study-abroad" },
+  { label: "About", href: "/about" },
+];
 
 export function Header() {
-  const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const [open, setOpen] = useState(false);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  useEffect(() => setOpen(false), [pathname]);
-
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [open]);
-
-  const isActive = (href: string) => pathname === href;
+  // The admin panel has its own chrome.
+  if (pathname?.startsWith("/admin")) return null;
 
   return (
-    <header
-      className={`sticky top-0 z-50 transition-colors duration-300 ${
-        scrolled
-          ? "bg-paper/85 backdrop-blur-md border-b border-line"
-          : "bg-paper/0 border-b border-transparent"
-      }`}
-    >
-      <div className="container-x flex items-center justify-between h-18 py-4">
-        <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label={`${site.name} home`}>
-          <Logo className="h-7 w-7 text-forest" />
-          <span className="font-display text-xl font-extrabold tracking-tight text-ink">
-            {site.name}
+    <header className="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur">
+      <div className="container-x flex h-16 items-center justify-between gap-4">
+        <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label={`${site.name} home`}>
+          <span className="grid size-9 place-items-center rounded-lg bg-brand-600 font-display text-lg font-extrabold text-white">
+            {site.name.charAt(0)}
+          </span>
+          <span className="font-display text-[0.95rem] font-extrabold leading-none tracking-tight">
+            <span className="block">{site.name.toUpperCase()}</span>
+            <span className="block text-[0.62rem] font-semibold tracking-[0.18em] text-brand-700">
+              MAHARASHTRA
+            </span>
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-7" aria-label="Primary">
-          {nav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              aria-current={isActive(item.href) ? "page" : undefined}
-              className={`font-display text-sm font-medium link-underline ${
-                isActive(item.href) ? "text-ink" : "text-ink/70 hover:text-ink"
-              }`}
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden lg:block">
-          <Link href="/contact" className="btn btn-primary px-5 py-2.5 text-sm">
-            Book a free session
-          </Link>
-        </div>
-
-        <button
-          onClick={() => setOpen((v) => !v)}
-          className="lg:hidden inline-flex flex-col justify-center gap-[5px] p-2 -mr-2"
-          aria-label={open ? "Close menu" : "Open menu"}
-          aria-expanded={open}
-        >
-          <span className={`block h-0.5 w-6 bg-ink transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />
-          <span className={`block h-0.5 w-6 bg-ink transition-opacity ${open ? "opacity-0" : ""}`} />
-          <span className={`block h-0.5 w-6 bg-ink transition-transform ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
-        </button>
-      </div>
-
-      {open && (
-        <div className="lg:hidden fixed inset-x-0 top-18 bottom-0 bg-paper z-40 border-t border-line">
-          <nav className="container-x flex flex-col py-6" aria-label="Mobile">
-            {nav.map((item) => (
+        <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary">
+          {NAV.map((item) => {
+            const active = pathname === item.href || pathname?.startsWith(item.href + "/");
+            return (
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-display text-2xl font-semibold text-ink py-4 border-b border-line"
+                aria-current={active ? "page" : undefined}
+                className={`rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+                  active
+                    ? "bg-brand-tint text-brand-700"
+                    : "text-muted hover:bg-paper-2 hover:text-ink"
+                }`}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
+        </nav>
+
+        <div className="flex items-center gap-2">
+          <a
+            href={`tel:${site.phone.replace(/\s/g, "")}`}
+            className="hidden text-sm font-semibold text-ink xl:block"
+          >
+            {site.phone}
+          </a>
+          {/* the mobile bottom bar already carries this CTA on small screens */}
+          <Link href="/counselling" className="btn btn-primary hidden px-3.5 py-2 text-sm sm:inline-flex">
+            Free counselling
+          </Link>
+          <button
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-label={open ? "Close menu" : "Open menu"}
+            className="grid size-9 place-items-center rounded-lg border border-line lg:hidden"
+          >
+            <span aria-hidden>{open ? "✕" : "☰"}</span>
+          </button>
+        </div>
+      </div>
+
+      {open && (
+        <nav className="border-t border-line bg-white lg:hidden" aria-label="Mobile">
+          <div className="container-x grid gap-1 py-3">
+            {NAV.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-paper-2"
               >
                 {item.label}
               </Link>
             ))}
-            <Link href="/contact" className="btn btn-primary mt-6 justify-center px-5 py-3.5 text-base">
-              Book a free session
-            </Link>
-          </nav>
-        </div>
+          </div>
+        </nav>
       )}
     </header>
   );

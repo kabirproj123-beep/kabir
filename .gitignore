@@ -47,3 +47,6 @@ next-env.d.ts
 *-firebase-adminsdk-*.json
 serviceAccount*.json
 service-account*.json
+
+# Local lead store (contains personal data — never commit)
+.data/

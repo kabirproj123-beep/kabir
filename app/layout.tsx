@@ -4,6 +4,7 @@ import "./globals.css";
 import { site } from "@/lib/content";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { MobileBar } from "@/components/MobileBar";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -52,6 +53,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <MobileBar />
       </body>
     </html>
   );
