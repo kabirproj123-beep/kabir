@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { formatINR, formatLPA, type College } from "@/lib/colleges";
+import { formatINR, formatLPA, hasVerifiedFee, type College } from "@/lib/colleges";
 import { getImage } from "@/lib/images";
 
 /**
@@ -35,6 +35,7 @@ function initials(name: string) {
 
 export function CollegeCard({ college: c }: { college: College }) {
   const img = getImage(c.slug);
+  const verified = hasVerifiedFee(c);
 
   return (
     <Link href={`/colleges/${c.slug}`} className="card card-hover flex h-full flex-col overflow-hidden">
@@ -83,8 +84,12 @@ export function CollegeCard({ college: c }: { college: College }) {
 
         <dl className="mt-auto grid grid-cols-2 gap-x-3 gap-y-1 border-t border-line pt-3 text-sm">
           <div>
-            <dt className="text-[0.68rem] uppercase tracking-wide text-faint">Total fees</dt>
-            <dd className="font-semibold text-ink">{formatINR(c.total_fee_value)}</dd>
+            <dt className="text-[0.68rem] uppercase tracking-wide text-faint">
+              {verified ? "Total fees" : "Fees"}
+            </dt>
+            <dd className={verified ? "font-semibold text-ink" : "font-semibold text-muted"}>
+              {verified ? formatINR(c.total_fee_value) : "On request"}
+            </dd>
           </div>
           <div>
             <dt className="text-[0.68rem] uppercase tracking-wide text-faint">Avg package</dt>

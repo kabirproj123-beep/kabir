@@ -94,6 +94,66 @@ Coverage is partial by design. Colleges with no confident match render a
 deterministic gradient instead, and that is the intended outcome — no photo
 beats the wrong photo.
 
+## Fees — the first source could not be trusted
+
+The `total_fee` field from promoteducation.com is **unreliable and unlabelled**,
+mixing annual and total figures. For IIT Bombay it gave three different numbers
+in three places:
+
+| Where | Figure |
+| --- | --- |
+| Their college listing | ₹3 Lakhs "total" |
+| Their own course table | ₹75,000 "total course fee" |
+| Their comparison widget | ₹2.2 L "per year" |
+| **Reality** (Collegedunia, B.Tech CSE) | **₹11,95,800 total** |
+
+Cross-checking every college we could match found **92 wrong fees**, some
+drastically so:
+
+| College | Was | Actually | Out by |
+| --- | ---: | ---: | ---: |
+| Mumbai University (LLM) | ₹15,437 | ₹6,41,704 | 41x |
+| COEP (B.Tech Mech) | ₹95,000 | ₹8,40,182 | 8.8x |
+| Datta Meghe (MBBS) | ₹19.85 L | ₹1.27 Cr | 6.4x |
+| IIT Bombay (B.Tech CSE) | ₹3 L | ₹11.96 L | 4.0x |
+
+Fees now come from Collegedunia, which states them as
+`<amount> <course> - Total Fees` — labelled, so they're comparable and
+checkable.
+
+```bash
+python3 parse_cd_fees.py            # cd_pages/*.txt -> cd_fees.json (518 colleges)
+python3 apply_fee_fix.py            # report the discrepancies, change nothing
+python3 apply_fee_fix.py --apply    # write corrections into data/colleges.json
+```
+
+### Matching, and why it's conservative
+
+Same hazard as the images: a wrong fee is worse than no fee. Naive name matching
+wanted to give **MNLU Nagpur** the fees of **MNLU Aurangabad** (different campus,
+different fees), **Shivaji University** those of *Chhatrapati Shivaji Maharaj
+University*, and **MET Institute of Management** those of **IIM Mumbai**.
+
+Three gates, all of which must pass:
+
+1. **City must agree**, after normalising suburbs to their city (Narhe → Pune,
+   Worli → Mumbai). This is what separates the two MNLU campuses.
+2. **A shared *rare* word.** Token frequency is computed across all 518
+   candidates; only words appearing in under 3% of names count as evidence.
+   "Somaiya" and "Kashibai" are evidence; "Institute", "Management" and "Mumbai"
+   are not — that last one is exactly how MET matched IIM.
+3. **Similarity ≥ 0.45**, and a marginal score (< 0.55) needs *two* rare words.
+   One shared surname is not enough: "Symbiosis Institute of Technology" and
+   "Symbiosis International University" are different institutions.
+
+Result: **92 of 192 fees verified.** The other 100 are flagged
+`fee_confidence: "low"` and the UI shows "On request" instead of a figure, with
+a note explaining why. Unverified fees are also excluded from fee sorting, fee
+filtering and the ROI calculation, so a bad number can't quietly skew a ranking.
+
+Note KJSCE vs KJSIEIT: two genuinely different Somaiya engineering colleges in
+Mumbai. The matcher correctly refuses to merge them.
+
 ## Known gaps
 
 These are properties of the upstream data, not parser bugs — verified by

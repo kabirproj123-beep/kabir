@@ -4,6 +4,7 @@ import {
   filterColleges,
   formatINR,
   formatLPA,
+  hasVerifiedFee,
   PRIMARY_STREAMS,
   STREAMS,
   type Stream,
@@ -92,7 +93,11 @@ export default async function RankingsPage(props: {
                   <td className="text-sm text-muted">{c.city}</td>
                   <td className="text-sm text-muted">{c.ownership ?? "—"}</td>
                   <td className="whitespace-nowrap font-semibold">
-                    {formatINR(c.total_fee_value)}
+                    {hasVerifiedFee(c) ? (
+                      formatINR(c.total_fee_value)
+                    ) : (
+                      <span className="text-muted">On request</span>
+                    )}
                   </td>
                   <td className="whitespace-nowrap font-semibold">
                     {formatLPA(c.avg_ctc_value)}
@@ -104,8 +109,10 @@ export default async function RankingsPage(props: {
         </div>
 
         <p className="mt-4 text-xs text-faint">
-          Fees and placement figures are compiled from college disclosures and public ranking
-          reports. Confirm current numbers with the institution before deciding.
+          Fees shown are total course fees cross-checked against a second source, with the
+          programme named on each college page. Where we couldn&apos;t verify a figure we show
+          &ldquo;on request&rdquo; rather than an unreliable number. Placement figures are
+          self-reported by institutions — confirm both with the college before deciding.
         </p>
       </div>
     </div>

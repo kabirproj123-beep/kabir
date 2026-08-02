@@ -12,6 +12,7 @@ import {
   formatLPA,
   getAllColleges,
   getCollege,
+  hasVerifiedFee,
   relatedColleges,
 } from "@/lib/colleges";
 
@@ -28,7 +29,7 @@ export async function generateMetadata(props: {
   if (!c) return { title: "College not found" };
 
   const bits = [
-    c.total_fee_value ? `${formatINR(c.total_fee_value)} total fees` : null,
+    hasVerifiedFee(c) ? `${formatINR(c.total_fee_value)} total fees` : null,
     c.avg_ctc_value ? `${formatLPA(c.avg_ctc_value)} average package` : null,
   ].filter(Boolean);
 
@@ -66,6 +67,7 @@ export default async function CollegeDetailPage(props: {
   if (!c) notFound();
 
   const img = getImage(c.slug);
+  const feeVerified = hasVerifiedFee(c);
   const related = relatedColleges(c);
   const factSheet = [
     ["Founded", c.founded],
@@ -135,9 +137,13 @@ export default async function CollegeDetailPage(props: {
             <div className="grid w-full grid-cols-2 gap-3 sm:w-auto">
               <div className="rounded-xl border border-line-navy bg-navy-2/80 p-3.5 backdrop-blur-sm sm:p-4">
                 <p className="font-display text-base font-extrabold sm:text-lg">
-                  {formatINR(c.total_fee_value)}
+                  {feeVerified ? formatINR(c.total_fee_value) : "On request"}
                 </p>
-                <p className="text-xs text-on-navy-dim">Total fees</p>
+                <p className="text-xs text-on-navy-dim">
+                  {feeVerified && c.fee_course
+                    ? `Total · ${c.fee_course.slice(0, 28)}`
+                    : "Total fees"}
+                </p>
               </div>
               <div className="rounded-xl border border-line-navy bg-navy-2/80 p-3.5 backdrop-blur-sm sm:p-4">
                 <p className="font-display text-base font-extrabold sm:text-lg">
@@ -268,6 +274,19 @@ export default async function CollegeDetailPage(props: {
                 <p className="mt-1 text-sm text-muted">
                   {c.courses.length} programme{c.courses.length === 1 ? "" : "s"} listed.
                 </p>
+                {feeVerified ? (
+                  <p className="mt-2 inline-flex items-center gap-1.5 rounded-lg bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700">
+                    ✓ Headline fee cross-checked against a second source
+                    {c.fee_course ? ` (${c.fee_course})` : ""}
+                  </p>
+                ) : (
+                  <p className="mt-2 rounded-lg bg-amber-50 px-2.5 py-1.5 text-xs text-amber-800">
+                    We couldn&apos;t verify this college&apos;s fees against a second source, so
+                    we&apos;re not publishing a headline figure. The per-course figures below come
+                    from the college listing and may be out of date — confirm with the admission
+                    office or ask a counsellor.
+                  </p>
+                )}
               </div>
               <div className="overflow-x-auto">
                 <table className="dtable min-w-[38rem]">

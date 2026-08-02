@@ -11,12 +11,15 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { LeadForm } from "./LeadForm";
-import { formatINR, formatLPA, type College } from "@/lib/colleges";
+import { formatINR, formatLPA, hasVerifiedFee, type College } from "@/lib/colleges";
 
 type Row = { label: string; get: (c: College) => string; gated?: boolean };
 
 const ROWS: Row[] = [
-  { label: "Total fees", get: (c) => formatINR(c.total_fee_value) },
+  {
+    label: "Total fees",
+    get: (c) => (hasVerifiedFee(c) ? formatINR(c.total_fee_value) : "On request"),
+  },
   { label: "Average package", get: (c) => formatLPA(c.avg_ctc_value) },
   { label: "NIRF ranking", get: (c) => (c.nirf_rank ? `#${c.nirf_rank}` : "—") },
   { label: "Highest package", get: (c) => formatLPA(c.highest_package_value), gated: true },
@@ -33,7 +36,9 @@ const ROWS: Row[] = [
 
 /** Crude but honest: how many times the total fee the first year's CTC covers. */
 function roi(c: College): string {
-  if (!c.avg_ctc_value || !c.total_fee_value) return "—";
+  // Never compute ROI from an unverified fee — the ratio would be as wrong as
+  // the denominator, and it reads like a precise judgement.
+  if (!c.avg_ctc_value || !hasVerifiedFee(c) || !c.total_fee_value) return "—";
   const x = c.avg_ctc_value / c.total_fee_value;
   const band = x >= 5 ? "Excellent" : x >= 2 ? "Strong" : "Moderate";
   return `${band} (${x.toFixed(1)}x)`;

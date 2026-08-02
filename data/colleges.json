@@ -95,7 +95,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "indian-institute-of-technology-bombay",
@@ -107,13 +108,13 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": 3,
-  "total_fee": "₹3 Lakhs",
-  "total_fee_value": 300000,
-  "avg_ctc": "25.0 LPA",
-  "avg_ctc_value": 2500000,
+  "total_fee": "₹1,195,800",
+  "total_fee_value": 1195800,
+  "avg_ctc": null,
+  "avg_ctc_value": 2350000,
   "highest_package": "₹3.7 Cr",
-  "highest_package_value": 37000000,
-  "placement_rate": 90.0,
+  "highest_package_value": 10000000,
+  "placement_rate": 90,
   "placement_year": "2025",
   "total_offers": "1,900",
   "tagline": "India's Leading Engineering Institution",
@@ -251,9 +252,12 @@
     "a": "Indian Institute of Technology Bombay is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.4,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Science and Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "institute-of-chemical-technology",
@@ -265,12 +269,12 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": 6,
-  "total_fee": "₹95,000",
-  "total_fee_value": 95000,
-  "avg_ctc": "9.0 LPA",
-  "avg_ctc_value": 900000,
+  "total_fee": "₹356,400",
+  "total_fee_value": 356400,
+  "avg_ctc": null,
+  "avg_ctc_value": 600000,
   "highest_package": "₹18 LPA",
-  "highest_package_value": 1800000,
+  "highest_package_value": 900000,
   "placement_rate": 83.5,
   "placement_year": "2025",
   "total_offers": null,
@@ -389,9 +393,12 @@
     "a": "Institute of Chemical Technology is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.3,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Chemical Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "symbiosis-institute-of-technology",
@@ -524,7 +531,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "coep-technological-university",
@@ -536,13 +544,13 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": 90,
-  "total_fee": "₹95,000",
-  "total_fee_value": 95000,
-  "avg_ctc": "11.0 LPA",
-  "avg_ctc_value": 1100000,
+  "total_fee": "₹840,182",
+  "total_fee_value": 840182,
+  "avg_ctc": null,
+  "avg_ctc_value": 1264000,
   "highest_package": "₹50.5 LPA",
-  "highest_package_value": 5050000,
-  "placement_rate": 89.0,
+  "highest_package_value": 6030000,
+  "placement_rate": 84,
   "placement_year": "2025",
   "total_offers": "1,300",
   "tagline": "India's Leading Engineering Institution",
@@ -657,9 +665,12 @@
     "a": "COEP Technological University is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.2,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Mechanical Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "defence-institute-of-advanced-technology",
@@ -791,7 +802,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "acem-hinjawadi-pune",
@@ -887,7 +899,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "atharva-coe-mumbai",
@@ -899,12 +912,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.80 Lakhs",
-  "total_fee_value": 480000,
+  "total_fee": "₹355,704",
+  "total_fee_value": 355704,
   "avg_ctc": "₹3.50 LPA",
   "avg_ctc_value": 350000,
   "highest_package": "₹10 LPA",
-  "highest_package_value": 1000000,
+  "highest_package_value": 2400000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -990,9 +1003,12 @@
     "a": "Atharva College of Engineering is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "bvucoe-pune",
@@ -1096,7 +1112,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "coep-pune",
@@ -1200,7 +1217,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "dypcoe-akurdi-pune",
@@ -1305,7 +1323,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "dypsoet-lohegaon-pune",
@@ -1401,7 +1420,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "dbit-kurla-mumbai",
@@ -1413,12 +1433,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹5.50 Lakhs",
-  "total_fee_value": 550000,
-  "avg_ctc": "₹5.25 LPA",
-  "avg_ctc_value": 525000,
+  "total_fee": "₹692,000",
+  "total_fee_value": 692000,
+  "avg_ctc": null,
+  "avg_ctc_value": 500000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 2500000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -1504,9 +1524,12 @@
     "a": "Don Bosco Institute of Technology is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.1,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "dypiemr-akurdi-pune",
@@ -1602,7 +1625,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "djsce-mumbai",
@@ -1614,12 +1638,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹7.80 Lakhs",
-  "total_fee_value": 780000,
-  "avg_ctc": "₹12.00 LPA",
-  "avg_ctc_value": 1200000,
+  "total_fee": "₹915,500",
+  "total_fee_value": 915500,
+  "avg_ctc": null,
+  "avg_ctc_value": 1128000,
   "highest_package": "₹44 LPA",
-  "highest_package_value": 4400000,
+  "highest_package_value": 5600000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -1703,9 +1727,12 @@
     "a": "Dwarkadas J. Sanghvi College of Engineering is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.1,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "frcrce-bandra-mumbai",
@@ -1717,12 +1744,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹6.00 Lakhs",
-  "total_fee_value": 600000,
-  "avg_ctc": "₹5.50 LPA",
-  "avg_ctc_value": 550000,
+  "total_fee": "₹860,000",
+  "total_fee_value": 860000,
+  "avg_ctc": null,
+  "avg_ctc_value": 630000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 2200000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -1807,9 +1834,12 @@
     "a": "Fr. Conceicao Rodrigues College of Engineering is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Science and Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "ghrcem-wagholi-pune",
@@ -1821,13 +1851,13 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.20 Lakhs",
-  "total_fee_value": 420000,
-  "avg_ctc": "₹4.50 LPA",
-  "avg_ctc_value": 450000,
+  "total_fee": "₹524,000",
+  "total_fee_value": 524000,
+  "avg_ctc": null,
+  "avg_ctc_value": 500000,
   "highest_package": "₹14.15 LPA",
-  "highest_package_value": 1415000,
-  "placement_rate": null,
+  "highest_package_value": 1450000,
+  "placement_rate": 77,
   "placement_year": "2025",
   "total_offers": null,
   "tagline": "India's Leading Engineering Institution",
@@ -1903,9 +1933,12 @@
     "a": "G.H. Raisoni College of Engineering and Management, Wagholi is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.7,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Information Technology",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "gsmcoe-balewadi-pune",
@@ -2001,7 +2034,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "isbm-sot-pune",
@@ -2013,12 +2047,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.50 Lakhs",
-  "total_fee_value": 350000,
-  "avg_ctc": "₹3.80 LPA",
-  "avg_ctc_value": 380000,
+  "total_fee": "₹993,000",
+  "total_fee_value": 993000,
+  "avg_ctc": null,
+  "avg_ctc_value": 550000,
   "highest_package": null,
-  "highest_package_value": null,
+  "highest_package_value": 2100000,
   "placement_rate": null,
   "placement_year": null,
   "total_offers": null,
@@ -2095,9 +2129,12 @@
     "a": "ISB&M School of Technology is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.1,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "icoer-wagholi-pune",
@@ -2193,7 +2230,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "icem-parandwadi-pune",
@@ -2298,7 +2336,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "i2it-hinjawadi-pune",
@@ -2310,12 +2349,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.50 Lakhs",
-  "total_fee_value": 450000,
+  "total_fee": "₹1,050,784",
+  "total_fee_value": 1050784,
   "avg_ctc": "₹6.50 LPA",
   "avg_ctc_value": 650000,
   "highest_package": "₹28 LPA",
-  "highest_package_value": 2800000,
+  "highest_package_value": 1020000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -2392,9 +2431,12 @@
     "a": "International Institute of Information Technology, Hinjawadi is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "jspm-ntc-narhe",
@@ -2406,12 +2448,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.80 Lakhs",
-  "total_fee_value": 380000,
-  "avg_ctc": "₹4.25 LPA",
-  "avg_ctc_value": 425000,
+  "total_fee": "₹470,000",
+  "total_fee_value": 470000,
+  "avg_ctc": null,
+  "avg_ctc_value": 420000,
   "highest_package": "₹18 LPA",
-  "highest_package_value": 1800000,
+  "highest_package_value": 1200000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -2497,9 +2539,12 @@
     "a": "JSPM Narhe Technical Campus is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Mechanical Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "jspm-rscoe-tathawade",
@@ -2511,12 +2556,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.80 Lakhs",
-  "total_fee_value": 480000,
+  "total_fee": "₹470,000",
+  "total_fee_value": 470000,
   "avg_ctc": "₹4.50 LPA",
   "avg_ctc_value": 450000,
   "highest_package": "₹22 LPA",
-  "highest_package_value": 2200000,
+  "highest_package_value": 3000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -2602,9 +2647,12 @@
     "a": "JSPM's Rajarshi Shahu College of Engineering, Tathawade is a recognized institution in Tathawade, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "jscoe-hadapsar-pune",
@@ -2616,12 +2664,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.00 Lakhs",
-  "total_fee_value": 400000,
-  "avg_ctc": "₹3.50 LPA",
-  "avg_ctc_value": 350000,
+  "total_fee": "₹556,000",
+  "total_fee_value": 556000,
+  "avg_ctc": null,
+  "avg_ctc_value": 220000,
   "highest_package": "₹6 LPA",
-  "highest_package_value": 600000,
+  "highest_package_value": 2640000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -2706,9 +2754,12 @@
     "a": "Jayawantrao Sawant College of Engineering is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.3,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "jsier-hadapsar-pune",
@@ -2720,12 +2771,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.60 Lakhs",
-  "total_fee_value": 360000,
-  "avg_ctc": "₹2.40 LPA",
-  "avg_ctc_value": 240000,
+  "total_fee": "₹556,000",
+  "total_fee_value": 556000,
+  "avg_ctc": null,
+  "avg_ctc_value": 220000,
   "highest_package": "₹3.5 LPA",
-  "highest_package_value": 350000,
+  "highest_package_value": 2640000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -2802,9 +2853,12 @@
     "a": "Jayawantrao Sawant Institute of Engineering and Research is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.3,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "kjsce-somaiya-mumbai",
@@ -2909,7 +2963,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "kjsit-somaiya-mumbai",
@@ -2921,12 +2976,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹6.20 Lakhs",
-  "total_fee_value": 620000,
-  "avg_ctc": "₹9.30 LPA",
-  "avg_ctc_value": 930000,
+  "total_fee": "₹780,608",
+  "total_fee_value": 780608,
+  "avg_ctc": null,
+  "avg_ctc_value": 600000,
   "highest_package": "₹25 LPA",
-  "highest_package_value": 2500000,
+  "highest_package_value": 1750000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -3012,9 +3067,12 @@
     "a": "K.J. Somaiya Institute of Technology is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Artificial Intelligence and Data Science",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "keystone-pune",
@@ -3026,8 +3084,8 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.20 Lakhs",
-  "total_fee_value": 320000,
+  "total_fee": "₹724,000",
+  "total_fee_value": 724000,
   "avg_ctc": "₹5.00 LPA",
   "avg_ctc_value": 500000,
   "highest_package": "₹12 LPA",
@@ -3108,9 +3166,12 @@
     "a": "Keystone School of Engineering is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.6,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "ltce-koparkhairane-navi-mumbai",
@@ -3122,12 +3183,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹5.00 Lakhs",
-  "total_fee_value": 500000,
-  "avg_ctc": "₹4.00 LPA",
+  "total_fee": "₹628,000",
+  "total_fee_value": 628000,
+  "avg_ctc": null,
   "avg_ctc_value": 400000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 3325000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -3212,9 +3273,12 @@
     "a": "Lokmanya Tilak College of Engineering is a recognized institution in Navi Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.5,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "mhssec-byculla-mumbai",
@@ -3317,7 +3381,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "mitaoe-alandi-pune",
@@ -3422,7 +3487,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "mitcoe-kothrud-pune",
@@ -3434,12 +3500,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.50 Lakhs",
-  "total_fee_value": 450000,
-  "avg_ctc": "₹7.25 LPA",
-  "avg_ctc_value": 725000,
+  "total_fee": "₹875,948",
+  "total_fee_value": 875948,
+  "avg_ctc": null,
+  "avg_ctc_value": 610000,
   "highest_package": "₹37.75 LPA",
-  "highest_package_value": 3775000,
+  "highest_package_value": 2800000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -3516,9 +3582,12 @@
     "a": "MIT College of Engineering, Kothrud is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "mitwpu-engineering-pune",
@@ -3623,7 +3692,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "mmcoe-karvenagar-pune",
@@ -3635,13 +3705,13 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.20 Lakhs",
-  "total_fee_value": 420000,
-  "avg_ctc": "₹5.50 LPA",
-  "avg_ctc_value": 550000,
+  "total_fee": "₹552,000",
+  "total_fee_value": 552000,
+  "avg_ctc": null,
+  "avg_ctc_value": 863000,
   "highest_package": "₹34 LPA",
-  "highest_package_value": 3400000,
-  "placement_rate": null,
+  "highest_package_value": 3240000,
+  "placement_rate": 89,
   "placement_year": "2025",
   "total_offers": null,
   "tagline": "India's Leading Engineering Institution",
@@ -3726,9 +3796,12 @@
     "a": "Marathwada Mitra Mandal's College of Engineering is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.7,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "mescoe-pune",
@@ -3740,12 +3813,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.20 Lakhs",
-  "total_fee_value": 420000,
+  "total_fee": "₹509,368",
+  "total_fee_value": 509368,
   "avg_ctc": "₹5.00 LPA",
   "avg_ctc_value": 500000,
   "highest_package": "₹20 LPA",
-  "highest_package_value": 2000000,
+  "highest_package_value": 1454000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -3822,9 +3895,12 @@
     "a": "Modern Education Society's College of Engineering, Pune is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.6,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "mpstme-nmims-mumbai",
@@ -3929,7 +4005,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "nmiet-talegaon-pune",
@@ -3941,12 +4018,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.50 Lakhs",
-  "total_fee_value": 350000,
-  "avg_ctc": "₹4.00 LPA",
-  "avg_ctc_value": 400000,
+  "total_fee": "₹496,000",
+  "total_fee_value": 496000,
+  "avg_ctc": null,
+  "avg_ctc_value": 526000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 6100000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -4031,9 +4108,12 @@
     "a": "Nutan Maharashtra Institute of Engineering and Technology is a recognized institution in Talegaon, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.6,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "pccoe-akurdi-pune",
@@ -4138,7 +4218,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "pce-new-panvel-mumbai",
@@ -4150,12 +4231,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.80 Lakhs",
-  "total_fee_value": 480000,
-  "avg_ctc": "₹4.50 LPA",
+  "total_fee": "₹399,000",
+  "total_fee_value": 399000,
+  "avg_ctc": null,
   "avg_ctc_value": 450000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 750000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -4240,9 +4321,12 @@
     "a": "Pillai College of Engineering is a recognized institution in Navi Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "pict-pune",
@@ -4254,12 +4338,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹5.20 Lakhs",
-  "total_fee_value": 520000,
-  "avg_ctc": "₹9.30 LPA",
-  "avg_ctc_value": 930000,
+  "total_fee": "₹492,000",
+  "total_fee_value": 492000,
+  "avg_ctc": null,
+  "avg_ctc_value": 1011000,
   "highest_package": "₹58 LPA",
-  "highest_package_value": 5800000,
+  "highest_package_value": 3357000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -4344,9 +4428,12 @@
     "a": "Pune Institute of Computer Technology is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "pvgcoet-pune",
@@ -4358,12 +4445,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.20 Lakhs",
-  "total_fee_value": 420000,
-  "avg_ctc": "₹4.50 LPA",
-  "avg_ctc_value": 450000,
+  "total_fee": "₹602,800",
+  "total_fee_value": 602800,
+  "avg_ctc": null,
+  "avg_ctc_value": 495000,
   "highest_package": "₹8.5 LPA",
-  "highest_package_value": 850000,
+  "highest_package_value": 3000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -4440,9 +4527,12 @@
     "a": "Pune Vidyarthi Griha's College of Engineering and Technology is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Artificial Intelligence and Data Science",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "rmdssoe-warje-pune",
@@ -4454,12 +4544,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.80 Lakhs",
-  "total_fee_value": 380000,
-  "avg_ctc": "₹4.50 LPA",
-  "avg_ctc_value": 450000,
+  "total_fee": "₹444,000",
+  "total_fee_value": 444000,
+  "avg_ctc": null,
+  "avg_ctc_value": 300000,
   "highest_package": "₹20 LPA",
-  "highest_package_value": 2000000,
+  "highest_package_value": 700000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -4536,9 +4626,12 @@
     "a": "RMD Sinhgad School of Engineering is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.6,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "rscoe-bhosari-pune",
@@ -4550,12 +4643,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.80 Lakhs",
-  "total_fee_value": 380000,
+  "total_fee": "₹470,000",
+  "total_fee_value": 470000,
   "avg_ctc": "₹4.50 LPA",
   "avg_ctc_value": 450000,
   "highest_package": "₹27 LPA",
-  "highest_package_value": 2700000,
+  "highest_package_value": 3000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -4632,9 +4725,12 @@
     "a": "RSCOE - Rajarshi Shahu College of Engineering, Bhosari is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "rscoe-tathawade-pune",
@@ -4646,12 +4742,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.80 Lakhs",
-  "total_fee_value": 480000,
+  "total_fee": "₹470,000",
+  "total_fee_value": 470000,
   "avg_ctc": "₹4.80 LPA",
   "avg_ctc_value": 480000,
   "highest_package": "₹20 LPA",
-  "highest_package_value": 2000000,
+  "highest_package_value": 3000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -4737,9 +4833,12 @@
     "a": "Rajarshi Shahu College of Engineering is a recognized institution in Tathawade, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "rgit-versova-mumbai",
@@ -4751,8 +4850,8 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.80 Lakhs",
-  "total_fee_value": 480000,
+  "total_fee": "₹524,000",
+  "total_fee_value": 524000,
   "avg_ctc": "₹4.50 LPA",
   "avg_ctc_value": 450000,
   "highest_package": "₹10 LPA",
@@ -4842,9 +4941,12 @@
     "a": "Rajiv Gandhi Institute of Technology is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.6,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Mechanical Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "rizvi-coe-mumbai",
@@ -4856,12 +4958,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.80 Lakhs",
-  "total_fee_value": 480000,
+  "total_fee": "₹432,000",
+  "total_fee_value": 432000,
   "avg_ctc": "₹4.50 LPA",
   "avg_ctc_value": 450000,
   "highest_package": "₹7 LPA",
-  "highest_package_value": 700000,
+  "highest_package_value": 1200000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -4946,9 +5048,12 @@
     "a": "Rizvi College of Engineering is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Artificial Intelligence and Data Science",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "saraswati-coe-navi-mumbai",
@@ -4960,12 +5065,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.20 Lakhs",
-  "total_fee_value": 420000,
-  "avg_ctc": "₹4.50 LPA",
-  "avg_ctc_value": 450000,
+  "total_fee": "₹436,000",
+  "total_fee_value": 436000,
+  "avg_ctc": null,
+  "avg_ctc_value": 400000,
   "highest_package": "₹10 LPA",
-  "highest_package_value": 1000000,
+  "highest_package_value": 1200000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -5050,9 +5155,12 @@
     "a": "Saraswati College of Engineering is a recognized institution in Navi Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Artificial Intelligence & Machine Learning",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "spce-mumbai",
@@ -5064,12 +5172,12 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹3.40 Lakhs",
-  "total_fee_value": 340000,
-  "avg_ctc": "₹6.50 LPA",
-  "avg_ctc_value": 650000,
+  "total_fee": "₹678,336",
+  "total_fee_value": 678336,
+  "avg_ctc": null,
+  "avg_ctc_value": 600000,
   "highest_package": "₹15 LPA",
-  "highest_package_value": 1500000,
+  "highest_package_value": 2700000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -5155,9 +5263,12 @@
     "a": "Sardar Patel College of Engineering is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Civil Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "spit-mumbai",
@@ -5169,12 +5280,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹6.80 Lakhs",
-  "total_fee_value": 680000,
-  "avg_ctc": "₹13.00 LPA",
-  "avg_ctc_value": 1300000,
+  "total_fee": "₹848,000",
+  "total_fee_value": 848000,
+  "avg_ctc": null,
+  "avg_ctc_value": 1347000,
   "highest_package": "₹58.5 LPA",
-  "highest_package_value": 5850000,
+  "highest_package_value": 3350000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -5259,9 +5370,12 @@
     "a": "Sardar Patel Institute of Technology is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "saoe-kondhwa-pune",
@@ -5273,12 +5387,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.00 Lakhs",
-  "total_fee_value": 400000,
-  "avg_ctc": "₹4.50 LPA",
-  "avg_ctc_value": 450000,
+  "total_fee": "₹444,000",
+  "total_fee_value": 444000,
+  "avg_ctc": null,
+  "avg_ctc_value": 300000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 700000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -5355,9 +5469,12 @@
     "a": "Sinhgad Academy of Engineering, Kondhwa is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.6,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "scoe-vadgaon-pune",
@@ -5462,7 +5579,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "sits-narhe-pune",
@@ -5474,10 +5592,10 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.80 Lakhs",
-  "total_fee_value": 380000,
-  "avg_ctc": "₹4.50 LPA",
-  "avg_ctc_value": 450000,
+  "total_fee": "₹425,680",
+  "total_fee_value": 425680,
+  "avg_ctc": null,
+  "avg_ctc_value": 480000,
   "highest_package": "₹10 LPA",
   "highest_package_value": 1000000,
   "placement_rate": null,
@@ -5556,9 +5674,12 @@
     "a": "Sinhgad Institute of Technology and Science, Narhe is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "skncoe-vadgaon-pune",
@@ -5570,12 +5691,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.20 Lakhs",
-  "total_fee_value": 420000,
-  "avg_ctc": "₹4.50 LPA",
-  "avg_ctc_value": 450000,
+  "total_fee": "₹390,000",
+  "total_fee_value": 390000,
+  "avg_ctc": null,
+  "avg_ctc_value": 400000,
   "highest_package": "₹33 LPA",
-  "highest_package_value": 3300000,
+  "highest_package_value": 5500000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -5652,9 +5773,12 @@
     "a": "Smt. Kashibai Navale College of Engineering is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "tsec-mumbai",
@@ -5666,12 +5790,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹6.50 Lakhs",
-  "total_fee_value": 650000,
+  "total_fee": "₹1,439,101",
+  "total_fee_value": 1439101,
   "avg_ctc": "₹5.50 LPA",
   "avg_ctc_value": 550000,
   "highest_package": "₹10 LPA",
-  "highest_package_value": 1000000,
+  "highest_package_value": 2020000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -5755,9 +5879,12 @@
     "a": "Thadomal Shahani Engineering College is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.7,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "tcet-kandivali-mumbai",
@@ -5769,12 +5896,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹5.80 Lakhs",
-  "total_fee_value": 580000,
-  "avg_ctc": "₹5.50 LPA",
-  "avg_ctc_value": 550000,
+  "total_fee": "₹576,000",
+  "total_fee_value": 576000,
+  "avg_ctc": null,
+  "avg_ctc_value": 765000,
   "highest_package": "₹17 LPA",
-  "highest_package_value": 1700000,
+  "highest_package_value": 2100000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -5859,9 +5986,12 @@
     "a": "Thakur College of Engineering and Technology is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Artificial Intelligence & Data Science",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "tcoer-kondhwa-pune",
@@ -5873,13 +6003,13 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.60 Lakhs",
-  "total_fee_value": 360000,
-  "avg_ctc": "₹3.50 LPA",
-  "avg_ctc_value": 350000,
+  "total_fee": "₹458,000",
+  "total_fee_value": 458000,
+  "avg_ctc": null,
+  "avg_ctc_value": 368000,
   "highest_package": "₹7 LPA",
-  "highest_package_value": 700000,
-  "placement_rate": null,
+  "highest_package_value": 3600000,
+  "placement_rate": 90,
   "placement_year": "2025",
   "total_offers": null,
   "tagline": "India's Leading Engineering Institution",
@@ -5955,9 +6085,12 @@
     "a": "Trinity College of Engineering and Research is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.2,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "umit-sndt-mumbai",
@@ -5969,12 +6102,12 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹3.00 Lakhs",
-  "total_fee_value": 300000,
+  "total_fee": "₹721,002",
+  "total_fee_value": 721002,
   "avg_ctc": "₹4.00 LPA",
   "avg_ctc_value": 400000,
   "highest_package": "₹7 LPA",
-  "highest_package_value": 700000,
+  "highest_package_value": 3164200,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -6059,9 +6192,12 @@
     "a": "Usha Mittal Institute of Technology is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "vjti-mumbai",
@@ -6073,12 +6209,12 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹3.40 Lakhs",
-  "total_fee_value": 340000,
-  "avg_ctc": "₹12.00 LPA",
-  "avg_ctc_value": 1200000,
+  "total_fee": "₹671,202",
+  "total_fee_value": 671202,
+  "avg_ctc": null,
+  "avg_ctc_value": 1635000,
   "highest_package": "₹57 LPA",
-  "highest_package_value": 5700000,
+  "highest_package_value": 7230000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -6164,9 +6300,12 @@
     "a": "Veermata Jijabai Technological Institute is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "vit-pune",
@@ -6178,13 +6317,13 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹7.20 Lakhs",
-  "total_fee_value": 720000,
-  "avg_ctc": "₹8.37 LPA",
-  "avg_ctc_value": 836999,
+  "total_fee": "₹844,757",
+  "total_fee_value": 844757,
+  "avg_ctc": null,
+  "avg_ctc_value": 750000,
   "highest_package": "₹34 LPA",
-  "highest_package_value": 3400000,
-  "placement_rate": null,
+  "highest_package_value": 4500000,
+  "placement_rate": 86,
   "placement_year": "2025",
   "total_offers": null,
   "tagline": "India's Leading Engineering Institution",
@@ -6269,9 +6408,12 @@
     "a": "Vishwakarma Institute of Technology is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "vesit-chembur-mumbai",
@@ -6283,12 +6425,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹5.50 Lakhs",
-  "total_fee_value": 550000,
+  "total_fee": "₹620,000",
+  "total_fee_value": 620000,
   "avg_ctc": "₹8.00 LPA",
   "avg_ctc_value": 800000,
   "highest_package": "₹20 LPA",
-  "highest_package_value": 2000000,
+  "highest_package_value": 1400000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -6374,9 +6516,12 @@
     "a": "Vivekanand Education Society's Institute of Technology is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "watumull-worli-mumbai",
@@ -6479,7 +6624,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "xie-mahim-mumbai",
@@ -6491,12 +6637,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹5.20 Lakhs",
-  "total_fee_value": 520000,
-  "avg_ctc": "₹4.50 LPA",
-  "avg_ctc_value": 450000,
+  "total_fee": "₹772,000",
+  "total_fee_value": 772000,
+  "avg_ctc": null,
+  "avg_ctc_value": 300000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 408000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -6582,9 +6728,12 @@
     "a": "Xavier Institute of Engineering is a recognized institution in Mumbai, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 3.7,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BE Information Technology",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "zes-dnyanganga-pune",
@@ -6680,7 +6829,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "zcoer-narhe-pune",
@@ -6692,12 +6842,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.80 Lakhs",
-  "total_fee_value": 380000,
-  "avg_ctc": "₹4.50 LPA",
-  "avg_ctc_value": 450000,
+  "total_fee": "₹616,800",
+  "total_fee_value": 616800,
+  "avg_ctc": null,
+  "avg_ctc_value": 500000,
   "highest_package": "₹18 LPA",
-  "highest_package_value": 1800000,
+  "highest_package_value": 1450000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -6781,9 +6931,12 @@
     "a": "Zeal College of Engineering and Research is a recognized institution in Pune, known for its academic excellence in Engineering."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.Tech Computer Engineering",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "symbiosis-law-school",
@@ -6881,7 +7034,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "atlas-skilltech-university",
@@ -6933,7 +7087,8 @@
   "faqs": [],
   "rating": 4.1,
   "reviews": 10,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "ahmednagar-jilha-maratha-vidya-prasarak-samaj-s-new-law-college",
@@ -6985,7 +7140,8 @@
   "faqs": [],
   "rating": 4.0,
   "reviews": 23,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "amity-university",
@@ -7037,7 +7193,8 @@
   "faqs": [],
   "rating": 4.2,
   "reviews": 101,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "bharati-vidyapeeth-deemed-university-pune",
@@ -7089,7 +7246,8 @@
   "faqs": [],
   "rating": 3.8,
   "reviews": 1103,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "christ-university-lavasa-campus",
@@ -7141,7 +7299,8 @@
   "faqs": [],
   "rating": 4.3,
   "reviews": 30,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "dy-patil-university",
@@ -7193,7 +7352,8 @@
   "faqs": [],
   "rating": 4.0,
   "reviews": 279,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "datta-meghe-institute-of-higher-education-and-research",
@@ -7245,7 +7405,8 @@
   "faqs": [],
   "rating": 4.2,
   "reviews": 75,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "dr-ambedkar-college",
@@ -7257,8 +7418,8 @@
   "ownership": null,
   "type": null,
   "nirf_rank": null,
-  "total_fee": "₹19,262",
-  "total_fee_value": 19262,
+  "total_fee": "₹52,500",
+  "total_fee_value": 52500,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -7297,7 +7458,10 @@
   "faqs": [],
   "rating": 3.9,
   "reviews": 31,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_course": "L.L.B",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "dr-babasaheb-ambedkar-marathwada-university",
@@ -7349,7 +7513,8 @@
   "faqs": [],
   "rating": 3.7,
   "reviews": 759,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "dr-d-y-patil-vidya-pratishthan-society-s",
@@ -7361,8 +7526,8 @@
   "ownership": null,
   "type": null,
   "nirf_rank": null,
-  "total_fee": "₹2,14,500",
-  "total_fee_value": 214500,
+  "total_fee": "₹130,500",
+  "total_fee_value": 130500,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -7401,7 +7566,10 @@
   "faqs": [],
   "rating": 3.8,
   "reviews": 4,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_course": "L.L.B",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "government-law-college",
@@ -7453,7 +7621,8 @@
   "faqs": [],
   "rating": 3.8,
   "reviews": 39,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "ils-law-college",
@@ -7505,7 +7674,8 @@
   "faqs": [],
   "rating": 3.7,
   "reviews": 42,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "kc-law-college",
@@ -7557,7 +7727,8 @@
   "faqs": [],
   "rating": 4.3,
   "reviews": 10,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "krishna-vishwa-vidyapeeth",
@@ -7609,7 +7780,8 @@
   "faqs": [],
   "rating": 4.1,
   "reviews": 25,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "maharashtra-national-law-university",
@@ -7661,7 +7833,8 @@
   "faqs": [],
   "rating": 4.1,
   "reviews": 38,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "manikchand-pahade-law-college",
@@ -7713,7 +7886,8 @@
   "faqs": [],
   "rating": 3.7,
   "reviews": 15,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "mumbai-university",
@@ -7765,7 +7939,8 @@
   "faqs": [],
   "rating": 3.8,
   "reviews": 12493,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "narsee-monjee-institute-of-management-studies",
@@ -7817,7 +7992,8 @@
   "faqs": [],
   "rating": 4.1,
   "reviews": 1042,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "sant-gadge-baba-amravati-university",
@@ -7869,7 +8045,8 @@
   "faqs": [],
   "rating": 3.6,
   "reviews": 769,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "savitribai-phule-pune-university",
@@ -7921,7 +8098,8 @@
   "faqs": [],
   "rating": 3.8,
   "reviews": 11091,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "shankarrao-chavan-law-college",
@@ -7933,8 +8111,8 @@
   "ownership": null,
   "type": null,
   "nirf_rank": null,
-  "total_fee": "₹2,04,000",
-  "total_fee_value": 204000,
+  "total_fee": "₹75,000",
+  "total_fee_value": 75000,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -7973,7 +8151,10 @@
   "faqs": [],
   "rating": 3.8,
   "reviews": 9,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_course": "L.L.B",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "shivaji-university",
@@ -8025,7 +8206,8 @@
   "faqs": [],
   "rating": 3.7,
   "reviews": 1489,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "shreemati-nathibai-damodar-thackersey-women-s-university",
@@ -8077,7 +8259,8 @@
   "faqs": [],
   "rating": 3.8,
   "reviews": 444,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "st-mira-s-college-for-girls",
@@ -8120,7 +8303,8 @@
   "faqs": [],
   "rating": 3.6,
   "reviews": 28,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "st-xavier-s-college",
@@ -8172,7 +8356,8 @@
   "faqs": [],
   "rating": 4.1,
   "reviews": 277,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "symbiosis-international-university",
@@ -8184,12 +8369,12 @@
   "ownership": null,
   "type": null,
   "nirf_rank": null,
-  "total_fee": "₹4,00,000",
-  "total_fee_value": 400000,
+  "total_fee": "₹506,000",
+  "total_fee_value": 506000,
   "avg_ctc": null,
-  "avg_ctc_value": null,
+  "avg_ctc_value": 900000,
   "highest_package": null,
-  "highest_package_value": null,
+  "highest_package_value": 2400000,
   "placement_rate": null,
   "placement_year": null,
   "total_offers": null,
@@ -8224,7 +8409,10 @@
   "faqs": [],
   "rating": 4.1,
   "reviews": 1056,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_course": "L.L.B",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "tiss-tata-institute-of-social-sciences",
@@ -8276,7 +8464,8 @@
   "faqs": [],
   "rating": 4.0,
   "reviews": 87,
-  "source": "collegedunia"
+  "source": "collegedunia",
+  "fee_confidence": "low"
  },
  {
   "slug": "indian-institute-of-management-mumbai",
@@ -8369,7 +8558,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "sibm-pune-mgmt",
@@ -8459,7 +8649,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "iit-bombay-sjmsom",
@@ -8471,13 +8662,13 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": 14,
-  "total_fee": "₹7.04 Lakhs",
-  "total_fee_value": 704000,
-  "avg_ctc": "28.0 LPA",
-  "avg_ctc_value": 2800000,
+  "total_fee": "₹1,729,800",
+  "total_fee_value": 1729800,
+  "avg_ctc": null,
+  "avg_ctc_value": 2350000,
   "highest_package": "₹54 LPA",
-  "highest_package_value": 5400000,
-  "placement_rate": 100.0,
+  "highest_package_value": 10000000,
+  "placement_rate": 90,
   "placement_year": "2025",
   "total_offers": "120",
   "tagline": "India's Leading Management Institution",
@@ -8548,9 +8739,12 @@
     "a": "IIT Bombay (SJMSOM) is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.4,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "s-p-jain-institute-of-management-research-mumbai",
@@ -8642,7 +8836,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "indian-institute-of-management-nagpur",
@@ -8732,7 +8927,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "k-j-somaiya-institute-of-management",
@@ -8744,12 +8940,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": 65,
-  "total_fee": "₹10.44 Lakhs",
-  "total_fee_value": 1044000,
-  "avg_ctc": "12.0 LPA",
-  "avg_ctc_value": 1200000,
+  "total_fee": "₹2,387,500",
+  "total_fee_value": 2387500,
+  "avg_ctc": null,
+  "avg_ctc_value": 1305000,
   "highest_package": "₹26.65 LPA",
-  "highest_package_value": 2665000,
+  "highest_package_value": 2930000,
   "placement_rate": 96.0,
   "placement_year": "2025",
   "total_offers": null,
@@ -8824,9 +9020,12 @@
     "a": "K. J. Somaiya Institute of Management is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "prin-l-n-welingkar-institute-of-management-development-and-research-mumbai",
@@ -8838,12 +9037,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": 75,
-  "total_fee": "₹6.5 Lakhs",
-  "total_fee_value": 650000,
-  "avg_ctc": "12.0 LPA",
-  "avg_ctc_value": 1200000,
+  "total_fee": "₹809,782",
+  "total_fee_value": 809782,
+  "avg_ctc": null,
+  "avg_ctc_value": 1168000,
   "highest_package": "₹25.5 LPA",
-  "highest_package_value": 2550000,
+  "highest_package_value": 4000000,
   "placement_rate": 98.0,
   "placement_year": "2025",
   "total_offers": "1,000",
@@ -8918,9 +9117,12 @@
     "a": "Prin. L. N. Welingkar Institute of Management Development & Research, Mumbai is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "M.M.S Finance",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "institute-of-management-technology-nagpur",
@@ -9014,7 +9216,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "alkesh-dinesh-mumbai",
@@ -9086,7 +9289,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "biib-pune",
@@ -9098,12 +9302,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹11.00 Lakhs",
-  "total_fee_value": 1100000,
-  "avg_ctc": "₹8.75 LPA",
-  "avg_ctc_value": 875000,
+  "total_fee": "₹279,000",
+  "total_fee_value": 279000,
+  "avg_ctc": null,
+  "avg_ctc_value": 750000,
   "highest_package": "₹22.29 LPA",
-  "highest_package_value": 2229000,
+  "highest_package_value": 2400000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -9156,9 +9360,12 @@
     "a": "Balaji Institute of International Business is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.3,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "bimhrd-pune",
@@ -9231,7 +9438,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "bimm-pune",
@@ -9243,13 +9451,13 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹11.00 Lakhs",
-  "total_fee_value": 1100000,
-  "avg_ctc": "₹8.75 LPA",
+  "total_fee": "₹6,000,000",
+  "total_fee_value": 6000000,
+  "avg_ctc": null,
   "avg_ctc_value": 875000,
   "highest_package": "₹21.09 LPA",
-  "highest_package_value": 2109000,
-  "placement_rate": null,
+  "highest_package_value": 2158000,
+  "placement_rate": 100,
   "placement_year": "2025",
   "total_offers": null,
   "tagline": "India's Leading Management Institution",
@@ -9302,9 +9510,12 @@
     "a": "Balaji Institute of Modern Management, Sri Balaji University is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.2,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "bitm-pune",
@@ -9375,7 +9586,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "dypimr-pimpri-pune",
@@ -9447,7 +9659,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "pumba-pune",
@@ -9459,12 +9672,12 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹1.30 Lakhs",
-  "total_fee_value": 130000,
-  "avg_ctc": "₹8.50 LPA",
-  "avg_ctc_value": 850000,
+  "total_fee": "₹363,000",
+  "total_fee_value": 363000,
+  "avg_ctc": null,
+  "avg_ctc_value": 650000,
   "highest_package": "₹18.9 LPA",
-  "highest_package_value": 1889999,
+  "highest_package_value": 1475000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -9518,9 +9731,12 @@
     "a": "Department of Management Sciences (PUMBA), Savitribai Phule Pune University is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "dyp-bschool-tathawade",
@@ -9592,7 +9808,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "flame-university-mgmt",
@@ -9663,7 +9880,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "ies-mgmt-mumbai",
@@ -9675,12 +9893,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹9.00 Lakhs",
-  "total_fee_value": 900000,
-  "avg_ctc": "₹7.50 LPA",
-  "avg_ctc_value": 750000,
+  "total_fee": "₹912,000",
+  "total_fee_value": 912000,
+  "avg_ctc": null,
+  "avg_ctc_value": 880000,
   "highest_package": "₹15 LPA",
-  "highest_package_value": 1500000,
+  "highest_package_value": 1000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -9734,9 +9952,12 @@
     "a": "IES Management College & Research Centre, Mumbai is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGDM",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "iiebm-indus-business-school",
@@ -9748,12 +9969,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹7.50 Lakhs",
-  "total_fee_value": 750000,
-  "avg_ctc": "₹7.80 LPA",
-  "avg_ctc_value": 780000,
+  "total_fee": "₹935,000",
+  "total_fee_value": 935000,
+  "avg_ctc": null,
+  "avg_ctc_value": 750000,
   "highest_package": "₹18 LPA",
-  "highest_package_value": 1800000,
+  "highest_package_value": 3000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -9798,9 +10019,12 @@
     "a": "IIEBM – Indus Business School, Pune is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.5,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGDM Marketing",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "ismr-pune",
@@ -9812,12 +10036,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹6.50 Lakhs",
-  "total_fee_value": 650000,
-  "avg_ctc": "₹7.50 LPA",
+  "total_fee": "₹935,000",
+  "total_fee_value": 935000,
+  "avg_ctc": null,
   "avg_ctc_value": 750000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 3000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -9871,9 +10095,12 @@
     "a": "ISMR Business School, Pune is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.5,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGDM Marketing",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "iim-mumbai",
@@ -9945,7 +10172,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "iimp-indira-pune",
@@ -10018,7 +10246,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "isbs-tathawade-pune",
@@ -10030,12 +10259,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹8.00 Lakhs",
-  "total_fee_value": 800000,
-  "avg_ctc": "₹7.00 LPA",
-  "avg_ctc_value": 700000,
+  "total_fee": "₹935,000",
+  "total_fee_value": 935000,
+  "avg_ctc": null,
+  "avg_ctc_value": 750000,
   "highest_package": "₹16 LPA",
-  "highest_package_value": 1600000,
+  "highest_package_value": 3000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -10089,9 +10318,12 @@
     "a": "Indira School of Business Studies is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.5,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGDM Marketing",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "ibmr-chinchwad-pune",
@@ -10103,12 +10335,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.00 Lakhs",
-  "total_fee_value": 300000,
-  "avg_ctc": "₹4.25 LPA",
-  "avg_ctc_value": 425000,
+  "total_fee": "₹279,000",
+  "total_fee_value": 279000,
+  "avg_ctc": null,
+  "avg_ctc_value": 750000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 2400000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -10160,9 +10392,12 @@
     "a": "Institute of Business Management and Research, Chinchwad is a recognized institution in Chinchwad, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.3,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "imed-bharati-vidyapeeth",
@@ -10235,7 +10470,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "iims-chinchwad-pune",
@@ -10306,7 +10542,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "isbm-pune-mgmt",
@@ -10318,12 +10555,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹12.20 Lakhs",
-  "total_fee_value": 1220000,
-  "avg_ctc": "₹11.20 LPA",
-  "avg_ctc_value": 1120000,
+  "total_fee": "₹1,429,000",
+  "total_fee_value": 1429000,
+  "avg_ctc": null,
+  "avg_ctc_value": 1140000,
   "highest_package": "₹18 LPA",
-  "highest_package_value": 1800000,
+  "highest_package_value": 2056000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -10377,9 +10614,12 @@
     "a": "International School of Business and Media (ISB&M), Pune is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGDM Marketing",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "ismail-yusuf-mgmt",
@@ -10451,7 +10691,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "jbims-mumbai",
@@ -10522,7 +10763,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "jankidevi-bajaj-mgmt",
@@ -10594,7 +10836,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "jsimr-hadapsar-pune",
@@ -10606,12 +10849,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹2.50 Lakhs",
-  "total_fee_value": 250000,
-  "avg_ctc": "₹2.00 LPA",
-  "avg_ctc_value": 200000,
+  "total_fee": "₹258,000",
+  "total_fee_value": 258000,
+  "avg_ctc": null,
+  "avg_ctc_value": 220000,
   "highest_package": "₹3 LPA",
-  "highest_package_value": 300000,
+  "highest_package_value": 2640000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -10665,9 +10908,12 @@
     "a": "Jayawantrao Sawant Institute of Management and Research is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.3,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA Agri-Business And Rural Development",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "kiams-pune",
@@ -10731,7 +10977,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "kohinoor-mgmt-mumbai",
@@ -10803,7 +11050,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "lexicon-mile-pune",
@@ -10815,12 +11063,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹9.00 Lakhs",
-  "total_fee_value": 900000,
-  "avg_ctc": "₹8.50 LPA",
-  "avg_ctc_value": 850000,
+  "total_fee": "₹1,080,000",
+  "total_fee_value": 1080000,
+  "avg_ctc": null,
+  "avg_ctc_value": 900000,
   "highest_package": "₹18 LPA",
-  "highest_package_value": 1800000,
+  "highest_package_value": 2200000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -10874,9 +11122,12 @@
     "a": "Lexicon Management Institute of Leadership and Excellence is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGDM",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "lotus-business-school-pune",
@@ -10888,12 +11139,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹4.00 Lakhs",
-  "total_fee_value": 400000,
-  "avg_ctc": "₹5.00 LPA",
-  "avg_ctc_value": 500000,
+  "total_fee": "₹935,000",
+  "total_fee_value": 935000,
+  "avg_ctc": null,
+  "avg_ctc_value": 750000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 3000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -10938,9 +11189,12 @@
     "a": "Lotus Business School, Pune is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.5,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGDM Marketing",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "met-mgmt-mumbai",
@@ -11013,7 +11267,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "mit-college-management-kothrud",
@@ -11077,7 +11332,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "mitsob-pune",
@@ -11089,12 +11345,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹7.50 Lakhs",
-  "total_fee_value": 750000,
-  "avg_ctc": "₹7.50 LPA",
+  "total_fee": "₹935,000",
+  "total_fee_value": 935000,
+  "avg_ctc": null,
   "avg_ctc_value": 750000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 3000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -11148,9 +11404,12 @@
     "a": "MIT School of Business is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.5,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGDM Marketing",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "mitwpu-mgmt-pune",
@@ -11162,12 +11421,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹15.00 Lakhs",
-  "total_fee_value": 1500000,
-  "avg_ctc": "₹7.50 LPA",
-  "avg_ctc_value": 750000,
+  "total_fee": "₹1,000,000",
+  "total_fee_value": 1000000,
+  "avg_ctc": null,
+  "avg_ctc_value": 700000,
   "highest_package": "₹20 LPA",
-  "highest_package_value": 2000000,
+  "highest_package_value": 5136000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -11221,9 +11480,12 @@
     "a": "MIT World Peace University – Faculty of Management is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA Finance",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "mnlu-mumbai-mgmt",
@@ -11295,7 +11557,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "nldimsr-mumbai",
@@ -11307,12 +11570,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹13.00 Lakhs",
-  "total_fee_value": 1300000,
-  "avg_ctc": "₹11.50 LPA",
-  "avg_ctc_value": 1150000,
+  "total_fee": "₹1,675,000",
+  "total_fee_value": 1675000,
+  "avg_ctc": null,
+  "avg_ctc_value": 1117000,
   "highest_package": "₹22.5 LPA",
-  "highest_package_value": 2250000,
+  "highest_package_value": 2400000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -11366,9 +11629,12 @@
     "a": "N. L. Dalmia Institute of Management Studies & Research is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.1,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGDM Finance",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "nibm-pune",
@@ -11380,12 +11646,12 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹16.00 Lakhs",
-  "total_fee_value": 1600000,
-  "avg_ctc": "₹15.01 LPA",
-  "avg_ctc_value": 1501000,
+  "total_fee": "₹1,784,000",
+  "total_fee_value": 1784000,
+  "avg_ctc": null,
+  "avg_ctc_value": 1410000,
   "highest_package": "₹24 LPA",
-  "highest_package_value": 2400000,
+  "highest_package_value": 2660000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -11430,9 +11696,12 @@
     "a": "National Institute of Bank Management is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.3,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PG Diploma Banking And Financial Services",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "nia-pune",
@@ -11504,7 +11773,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "neville-wadia-pune",
@@ -11516,12 +11786,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹2.50 Lakhs",
-  "total_fee_value": 250000,
-  "avg_ctc": "₹5.50 LPA",
+  "total_fee": "₹268,000",
+  "total_fee_value": 268000,
+  "avg_ctc": null,
   "avg_ctc_value": 550000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 1005000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -11566,9 +11836,12 @@
     "a": "Neville Wadia Institute of Management Studies and Research is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.4,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "pibm-pune",
@@ -11580,12 +11853,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹8.20 Lakhs",
-  "total_fee_value": 819999,
-  "avg_ctc": "₹8.50 LPA",
-  "avg_ctc_value": 850000,
+  "total_fee": "₹324,000",
+  "total_fee_value": 324000,
+  "avg_ctc": null,
+  "avg_ctc_value": 1030000,
   "highest_package": "₹18 LPA",
-  "highest_package_value": 1800000,
+  "highest_package_value": 2600000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -11639,9 +11912,12 @@
     "a": "Pune Institute of Business Management is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.7,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "spjimr-mumbai",
@@ -11653,12 +11929,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹22.00 Lakhs",
-  "total_fee_value": 2200000,
-  "avg_ctc": "₹33.00 LPA",
-  "avg_ctc_value": 3300000,
+  "total_fee": "₹10,151,000",
+  "total_fee_value": 10151000,
+  "avg_ctc": null,
+  "avg_ctc_value": 2052007,
   "highest_package": "₹80 LPA",
-  "highest_package_value": 8000000,
+  "highest_package_value": 3830734,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -11711,9 +11987,12 @@
     "a": "S.P. Jain Institute of Management & Research is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.4,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "sies-mgmt-navi-mumbai",
@@ -11725,12 +12004,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹9.00 Lakhs",
-  "total_fee_value": 900000,
-  "avg_ctc": "₹9.80 LPA",
-  "avg_ctc_value": 980000,
+  "total_fee": "₹496,000",
+  "total_fee_value": 496000,
+  "avg_ctc": null,
+  "avg_ctc_value": 876000,
   "highest_package": "₹23 LPA",
-  "highest_package_value": 2300000,
+  "highest_package_value": 1700000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -11783,9 +12062,12 @@
     "a": "SIES College of Management Studies is a recognized institution in Navi Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.6,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "M.M.S",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "sndt-women-university-mgmt",
@@ -11857,7 +12139,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "nmims-mgmt-mumbai",
@@ -11869,13 +12152,13 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹23.90 Lakhs",
-  "total_fee_value": 2390000,
-  "avg_ctc": "₹26.63 LPA",
-  "avg_ctc_value": 2663000,
+  "total_fee": "₹811,000",
+  "total_fee_value": 811000,
+  "avg_ctc": null,
+  "avg_ctc_value": 789000,
   "highest_package": "₹67.8 LPA",
-  "highest_package_value": 6780000,
-  "placement_rate": null,
+  "highest_package_value": 2000000,
+  "placement_rate": 95,
   "placement_year": "2025",
   "total_offers": null,
   "tagline": "India's Leading Management Institution",
@@ -11928,9 +12211,12 @@
     "a": "SVKM's NMIMS – School of Business Management is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "PGPM",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "sbiims-pune",
@@ -11994,7 +12280,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "sjmsom-iitb",
@@ -12067,7 +12354,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "siom-pune-mgmt",
@@ -12079,12 +12367,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹3.20 Lakhs",
-  "total_fee_value": 320000,
-  "avg_ctc": "₹6.50 LPA",
-  "avg_ctc_value": 650000,
+  "total_fee": "₹286,000",
+  "total_fee_value": 286000,
+  "avg_ctc": null,
+  "avg_ctc_value": 460000,
   "highest_package": "₹12 LPA",
-  "highest_package_value": 1200000,
+  "highest_package_value": 840000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -12138,9 +12426,12 @@
     "a": "Sinhgad Institute of Management is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.6,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA Information Technology",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "simmc-pune",
@@ -12204,7 +12495,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "simsree-mumbai",
@@ -12216,13 +12508,13 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹1.34 Lakhs",
-  "total_fee_value": 134000,
-  "avg_ctc": "₹13.70 LPA",
-  "avg_ctc_value": 1370000,
+  "total_fee": "₹138,000",
+  "total_fee_value": 138000,
+  "avg_ctc": null,
+  "avg_ctc_value": 1510000,
   "highest_package": "₹20 LPA",
-  "highest_package_value": 2000000,
-  "placement_rate": null,
+  "highest_package_value": 2250000,
+  "placement_rate": 100,
   "placement_year": "2025",
   "total_offers": null,
   "tagline": "India's Leading Management Institution",
@@ -12273,9 +12565,12 @@
     "a": "Sydenham Institute of Management Studies, Research & Entrepreneurship Education is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "M.M.S",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "scit-pune",
@@ -12348,7 +12643,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "scmhrd-pune",
@@ -12421,7 +12717,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "sibm-pune",
@@ -12433,12 +12730,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹24.00 Lakhs",
-  "total_fee_value": 2400000,
-  "avg_ctc": "₹26.77 LPA",
-  "avg_ctc_value": 2677000,
+  "total_fee": "₹324,000",
+  "total_fee_value": 324000,
+  "avg_ctc": null,
+  "avg_ctc_value": 1030000,
   "highest_package": "₹49 LPA",
-  "highest_package_value": 4900000,
+  "highest_package_value": 2600000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -12492,9 +12789,12 @@
     "a": "Symbiosis Institute of Business Management, Pune is a recognized institution in Pune, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 3.7,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "siib-pune",
@@ -12567,7 +12867,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "sims-pune",
@@ -12638,7 +12939,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "tiss-mumbai",
@@ -12650,12 +12952,12 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹2.50 Lakhs",
-  "total_fee_value": 250000,
-  "avg_ctc": "₹27.22 LPA",
-  "avg_ctc_value": 2722000,
+  "total_fee": "₹159,450",
+  "total_fee_value": 159450,
+  "avg_ctc": null,
+  "avg_ctc_value": 2820000,
   "highest_package": "₹49 LPA",
-  "highest_package_value": 4900000,
+  "highest_package_value": 3625000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -12708,9 +13010,12 @@
     "a": "Tata Institute of Social Sciences, Mumbai is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "M.H.A [Hospital] Hospital Administration",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "thakur-global-mgmt",
@@ -12722,12 +13027,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹9.50 Lakhs",
-  "total_fee_value": 950000,
+  "total_fee": "₹866,600",
+  "total_fee_value": 866600,
   "avg_ctc": "₹7.00 LPA",
   "avg_ctc_value": 700000,
   "highest_package": "₹10 LPA",
-  "highest_package_value": 1000000,
+  "highest_package_value": 2300000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -12780,9 +13085,12 @@
     "a": "Thakur Global Business School is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.4,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBA + PGPM",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "vim-pune-mgmt",
@@ -12853,7 +13161,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "welingkar-weschool-mumbai",
@@ -12865,12 +13174,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹14.00 Lakhs",
-  "total_fee_value": 1400000,
-  "avg_ctc": "₹12.30 LPA",
-  "avg_ctc_value": 1230000,
+  "total_fee": "₹809,782",
+  "total_fee_value": 809782,
+  "avg_ctc": null,
+  "avg_ctc_value": 1168000,
   "highest_package": "₹29 LPA",
-  "highest_package_value": 2900000,
+  "highest_package_value": 4000000,
   "placement_rate": null,
   "placement_year": "2025",
   "total_offers": null,
@@ -12924,9 +13233,12 @@
     "a": "Welingkar Institute of Management Development & Research is a recognized institution in Mumbai, known for its academic excellence in Management."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "M.M.S Finance",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "whistling-woods-mgmt",
@@ -12998,7 +13310,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "ifeel-lonavala-pune",
@@ -13062,7 +13375,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "dr-d-y-patil-vidyapeeth",
@@ -13169,7 +13483,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "datta-meghe-institute-of-medical-sciences",
@@ -13181,12 +13496,12 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": 20,
-  "total_fee": "₹19.85 Lakhs",
-  "total_fee_value": 1985000,
-  "avg_ctc": "8.5 LPA",
-  "avg_ctc_value": 850000,
+  "total_fee": "₹12,740,000",
+  "total_fee_value": 12740000,
+  "avg_ctc": null,
+  "avg_ctc_value": 450000,
   "highest_package": null,
-  "highest_package_value": null,
+  "highest_package_value": 1200000,
   "placement_rate": 95.0,
   "placement_year": "2025",
   "total_offers": null,
@@ -13274,9 +13589,12 @@
     "a": "Datta Meghe Institute of Medical Sciences is a recognized institution in Wardha, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 4.2,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBBS",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "afmc-pune",
@@ -13288,8 +13606,8 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹1.50 Lakhs",
-  "total_fee_value": 150000,
+  "total_fee": "₹98,960",
+  "total_fee_value": 98960,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -13347,9 +13665,12 @@
     "a": "Armed Forces Medical College, Pune is a recognized institution in Pune, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 4.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBBS",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "bjmc-pune",
@@ -13421,7 +13742,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "bkl-walawalkar-medical",
@@ -13494,7 +13816,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "bvdumc-pune",
@@ -13506,13 +13829,13 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹95.00 Lakhs",
-  "total_fee_value": 9500000,
+  "total_fee": "₹4,600,000",
+  "total_fee_value": 4600000,
   "avg_ctc": null,
-  "avg_ctc_value": null,
+  "avg_ctc_value": 515000,
   "highest_package": null,
-  "highest_package_value": null,
-  "placement_rate": null,
+  "highest_package_value": 1900000,
+  "placement_rate": 85,
   "placement_year": null,
   "total_offers": null,
   "tagline": "A Premier Institution for Healthcare Excellence",
@@ -13565,9 +13888,12 @@
     "a": "Bharati Vidyapeeth Deemed University Medical College, Pune is a recognized institution in Pune, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 3.8,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.A.M.S",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "dypmc-ambi-talegaon",
@@ -13640,7 +13966,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "dypmc-pimpri-pune",
@@ -13652,8 +13979,8 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹115.00 Lakhs",
-  "total_fee_value": 11500000,
+  "total_fee": "₹332,200",
+  "total_fee_value": 332200,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -13713,7 +14040,10 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BUMS Kamil-E-Tibb-O-Jarahat",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "dypmc-navi-mumbai",
@@ -13786,7 +14116,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "grant-medical-college-mumbai",
@@ -13798,8 +14129,8 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹6.80 Lakhs",
-  "total_fee_value": 680000,
+  "total_fee": "₹882,440",
+  "total_fee_value": 882440,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -13857,9 +14188,12 @@
     "a": "Grant Medical College and Sir J.J. Group of Hospitals is a recognized institution in Mumbai, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 4.4,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBBS",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "hbtmc-cooper-mumbai",
@@ -13871,8 +14205,8 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹6.00 Lakhs",
-  "total_fee_value": 600000,
+  "total_fee": "₹1,673,150",
+  "total_fee_value": 1673150,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -13930,9 +14264,12 @@
     "a": "HBT Medical College & Dr. R.N. Cooper Municipal General Hospital is a recognized institution in Mumbai, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 4.1,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBBS",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "kjsmc-somaiya-mumbai",
@@ -13944,8 +14281,8 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹57.50 Lakhs",
-  "total_fee_value": 5750000,
+  "total_fee": "₹6,040,000",
+  "total_fee_value": 6040000,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -14003,9 +14340,12 @@
     "a": "K. J. Somaiya Medical College & Research Centre is a recognized institution in Mumbai, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 3.7,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBBS",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "ltmmc-sion-mumbai",
@@ -14017,8 +14357,8 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹6.00 Lakhs",
-  "total_fee_value": 600000,
+  "total_fee": "₹221,104",
+  "total_fee_value": 221104,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -14076,9 +14416,12 @@
     "a": "Lokmanya Tilak Municipal Medical College and General Hospital is a recognized institution in Mumbai, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 3.7,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.P.T",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "mgmmc-navi-mumbai",
@@ -14150,7 +14493,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "mimer-talegaon-pune",
@@ -14223,7 +14567,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "mimsr-latur",
@@ -14296,7 +14641,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "rgmc-kalwa-thane",
@@ -14308,8 +14654,8 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹6.00 Lakhs",
-  "total_fee_value": 600000,
+  "total_fee": "₹1,254,870",
+  "total_fee_value": 1254870,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -14367,9 +14713,12 @@
     "a": "Rajiv Gandhi Medical College & Chhatrapati Shivaji Maharaj Hospital is a recognized institution in Thane, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 4.2,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBBS",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "seth-gs-medical-college-mumbai",
@@ -14381,8 +14730,8 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹6.50 Lakhs",
-  "total_fee_value": 650000,
+  "total_fee": "₹287,214",
+  "total_fee_value": 287214,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -14439,9 +14788,12 @@
     "a": "Seth G.S. Medical College and KEM Hospital is a recognized institution in Mumbai, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.P.T",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "sdch-pune",
@@ -14453,8 +14805,8 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹15.00 Lakhs",
-  "total_fee_value": 1500000,
+  "total_fee": "₹332,200",
+  "total_fee_value": 332200,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -14513,7 +14865,10 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "BUMS Kamil-E-Tibb-O-Jarahat",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "sknmc-narhe-pune",
@@ -14525,8 +14880,8 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹55.00 Lakhs",
-  "total_fee_value": 5500000,
+  "total_fee": "₹6,006,150",
+  "total_fee_value": 6006150,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -14583,9 +14938,12 @@
     "a": "Smt. Kashibai Navale Medical College, Narhe, Pune is a recognized institution in Narhe, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 3.7,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBBS",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "smcw-pune",
@@ -14656,7 +15014,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "terna-medical-navi-mumbai",
@@ -14668,8 +15027,8 @@
   "ownership": "Private",
   "type": "private",
   "nirf_rank": null,
-  "total_fee": "₹37.50 Lakhs",
-  "total_fee_value": 3750000,
+  "total_fee": "₹3,605,000",
+  "total_fee_value": 3605000,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -14727,9 +15086,12 @@
     "a": "Terna Medical College, Navi Mumbai is a recognized institution in Navi Mumbai, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 3.9,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "MBBS",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "tnmc-nair-mumbai",
@@ -14741,8 +15103,8 @@
   "ownership": "Government",
   "type": "government",
   "nirf_rank": null,
-  "total_fee": "₹6.00 Lakhs",
-  "total_fee_value": 600000,
+  "total_fee": "₹179,690",
+  "total_fee_value": 179690,
   "avg_ctc": null,
   "avg_ctc_value": null,
   "highest_package": null,
@@ -14799,9 +15161,12 @@
     "a": "Topiwala National Medical College and BYL Nair Charitable Hospital is a recognized institution in Mumbai, known for its academic excellence in Medical."
    }
   ],
-  "rating": null,
+  "rating": 4.0,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_course": "B.P.T",
+  "fee_confidence": "high",
+  "fee_source": "collegedunia"
  },
  {
   "slug": "nmims-mumbai-pharmacy",
@@ -14901,7 +15266,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "poona-college-pharmacy",
@@ -15000,7 +15366,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "dyp-pune-pharmacy",
@@ -15104,7 +15471,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "bncp-mumbai",
@@ -15204,7 +15572,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "rcpatel-shirpur",
@@ -15304,7 +15673,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "rashtrasant-tukadoji-maharaj-nagpur-university",
@@ -15400,7 +15770,8 @@
   ],
   "rating": 3.8,
   "reviews": 2765,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "smt-kishoritai-bhoyar-college-of-pharmacy",
@@ -15500,7 +15871,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "mit-world-peace-university",
@@ -15600,7 +15972,8 @@
   ],
   "rating": 3.9,
   "reviews": 910,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "bvcp-kolhapur",
@@ -15700,7 +16073,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "y-b-chavan-college",
@@ -15800,7 +16174,8 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  },
  {
   "slug": "progressive-education-societys-modern-college-of-pharmacy",
@@ -15901,6 +16276,7 @@
   ],
   "rating": null,
   "reviews": 0,
-  "source": "promoteducation"
+  "source": "promoteducation",
+  "fee_confidence": "low"
  }
 ]

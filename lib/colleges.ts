@@ -60,7 +60,24 @@ export type College = {
   rating: number | null;
   reviews: number;
   source: string;
+  /**
+   * Whether the fee figure has been cross-checked against a second source that
+   * states which course it covers.
+   *
+   * The original scrape mixed annual and total fees without labelling them and
+   * was wildly wrong in places — COEP was out by 8.8x, Mumbai University by 41x.
+   * Only "high" figures are safe to show as a number; "low" ones are withheld.
+   */
+  fee_confidence?: "high" | "low";
+  /** Which programme the verified fee is for, e.g. "B.Tech Computer Science". */
+  fee_course?: string | null;
+  fee_source?: string;
 };
+
+/** True when the fee can be shown as a figure rather than "on request". */
+export function hasVerifiedFee(c: College): boolean {
+  return c.fee_confidence === "high" && c.total_fee_value !== null;
+}
 
 export const STREAMS = [
   "Engineering",
@@ -125,7 +142,9 @@ export function filterColleges(f: Filters): College[] {
     out = out.filter((c) => c.ownership === f.ownership);
   }
   if (typeof f.maxFee === "number") {
-    out = out.filter((c) => c.total_fee_value !== null && c.total_fee_value <= f.maxFee!);
+    // Only filter on fees we actually trust — an unverified figure could be out
+    // by several multiples and would silently exclude the wrong colleges.
+    out = out.filter((c) => hasVerifiedFee(c) && c.total_fee_value! <= f.maxFee!);
   }
   if (f.q) {
     const q = f.q.trim().toLowerCase();
@@ -141,12 +160,15 @@ export function filterColleges(f: Filters): College[] {
   }
 
   const sort = f.sort ?? "rank";
+  // Unverified fees must not participate in fee ordering, or a college whose
+  // real fee is 8x the stored one appears at the top of "cheapest first".
+  const fee = (c: College) => (hasVerifiedFee(c) ? c.total_fee_value! : null);
   return [...out].sort((a, b) => {
     switch (sort) {
       case "fee-low":
-        return (a.total_fee_value ?? LAST) - (b.total_fee_value ?? LAST);
+        return (fee(a) ?? LAST) - (fee(b) ?? LAST);
       case "fee-high":
-        return (b.total_fee_value ?? -1) - (a.total_fee_value ?? -1);
+        return (fee(b) ?? -1) - (fee(a) ?? -1);
       case "ctc":
         return (b.avg_ctc_value ?? -1) - (a.avg_ctc_value ?? -1);
       case "name":

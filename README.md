@@ -40,6 +40,18 @@ Per college: fees, average and highest package, NIRF rank, NAAC grade,
 ownership, founding year, affiliation, campus size, entrance exams, facilities,
 a full course-and-fee table (447 rows overall), and FAQs (495 overall).
 
+### Fees are cross-checked, and labelled when they aren't
+
+The original fee data was badly wrong — it mixed annual and total figures without
+labelling them, and was out by **8.8x for COEP** and **41x for Mumbai
+University**. Fees now come from a second source that states which course each
+figure covers, and **92 of 192 have been verified** this way.
+
+The remaining 100 show **"On request"** rather than a number we can't stand
+behind, and are excluded from fee sorting, filtering and ROI. Verified fees carry
+the programme name and a cross-checked badge. Full detail, including the matching
+rules, is in [`scripts/scrape/README.md`](scripts/scrape/README.md).
+
 Sources, method, normalisation rules and **known gaps** are documented in
 [`scripts/scrape/README.md`](scripts/scrape/README.md). Missing values render as
 a dash — nothing is invented to fill a hole.
