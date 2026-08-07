@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { site } from "@/lib/content";
 import { COURSES, EXAMS } from "@/lib/catalog";
 import { PRIMARY_STREAMS } from "@/lib/colleges";
@@ -34,11 +33,7 @@ const COLUMNS = [
 ];
 
 export function Footer() {
-  const pathname = usePathname();
   const year = new Date().getFullYear();
-
-  // The admin panel has its own chrome.
-  if (pathname?.startsWith("/admin")) return null;
 
   return (
     <footer className="bg-navy text-white">

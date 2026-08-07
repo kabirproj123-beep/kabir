@@ -3,14 +3,10 @@
  * unlock, loan calculator, counselling request, newsletter) funnels here, and
  * the admin panel at /admin reads it back.
  *
- * Storage: Firestore when credentials exist, otherwise a JSON file under
- * .data/leads.json so the site is demoable before Firebase is provisioned.
- * The file store is single-process and NOT for production — it exists so no
- * lead is silently dropped during setup.
+ * Storage: Firestore only. If Firebase is not configured, writes fail loudly
+ * instead of silently falling back to a local JSON file.
  */
 import "server-only";
-import { promises as fs } from "node:fs";
-import path from "node:path";
 import { getAdminDb, isFirebaseConfigured } from "./firebaseAdmin";
 
 export const LEAD_SOURCES = [
@@ -44,7 +40,6 @@ export type Lead = {
 export type NewLead = Omit<Lead, "id" | "createdAt" | "status">;
 
 const COLLECTION = "leads";
-const FILE = path.join(process.cwd(), ".data", "leads.json");
 
 /* ----------------------------- validation ------------------------------ */
 
@@ -95,21 +90,6 @@ export function validateLead(input: Partial<NewLead>): { ok: true; lead: NewLead
   };
 }
 
-/* ------------------------------ file store ----------------------------- */
-
-async function readFileStore(): Promise<Lead[]> {
-  try {
-    return JSON.parse(await fs.readFile(FILE, "utf8")) as Lead[];
-  } catch {
-    return [];
-  }
-}
-
-async function writeFileStore(leads: Lead[]): Promise<void> {
-  await fs.mkdir(path.dirname(FILE), { recursive: true });
-  await fs.writeFile(FILE, JSON.stringify(leads, null, 1), "utf8");
-}
-
 /* -------------------------------- API ---------------------------------- */
 
 export async function createLead(input: NewLead): Promise<Lead> {
@@ -126,10 +106,7 @@ export async function createLead(input: NewLead): Promise<Lead> {
     return lead;
   }
 
-  const all = await readFileStore();
-  all.unshift(lead);
-  await writeFileStore(all);
-  return lead;
+  throw new Error("Firebase is not configured. Leads require Firestore.");
 }
 
 export async function listLeads(limit = 500): Promise<Lead[]> {
@@ -138,10 +115,8 @@ export async function listLeads(limit = 500): Promise<Lead[]> {
     const snap = await db.collection(COLLECTION).orderBy("createdAt", "desc").limit(limit).get();
     return snap.docs.map((d) => d.data() as Lead);
   }
-  const all = await readFileStore();
-  return all
-    .sort((a, b) => b.createdAt.localeCompare(a.createdAt))
-    .slice(0, limit);
+
+  throw new Error("Firebase is not configured. Leads require Firestore.");
 }
 
 export async function updateLeadStatus(id: string, status: LeadStatus): Promise<void> {
@@ -150,12 +125,8 @@ export async function updateLeadStatus(id: string, status: LeadStatus): Promise<
     await db.collection(COLLECTION).doc(id).update({ status });
     return;
   }
-  const all = await readFileStore();
-  const hit = all.find((l) => l.id === id);
-  if (hit) {
-    hit.status = status;
-    await writeFileStore(all);
-  }
+
+  throw new Error("Firebase is not configured. Leads require Firestore.");
 }
 
 export function storageMode(): "firestore" | "file" {

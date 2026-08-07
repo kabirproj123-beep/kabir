@@ -19,9 +19,6 @@ export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  // The admin panel has its own chrome.
-  if (pathname?.startsWith("/admin")) return null;
-
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white/90 backdrop-blur">
       <div className="container-x flex h-16 items-center justify-between gap-4">

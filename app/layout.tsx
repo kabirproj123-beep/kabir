@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Inter, Newsreader } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/content";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { MobileBar } from "@/components/MobileBar";
 
 const bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
@@ -41,6 +38,10 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Fonts and document shell only. The public site and the admin panel each bring
+ * their own chrome — see app/(site)/layout.tsx and app/(admin)/admin/layout.tsx.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -49,12 +50,7 @@ export default function RootLayout({
       lang="en"
       className={`${bricolage.variable} ${inter.variable} ${newsreader.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-paper text-ink">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
-        <MobileBar />
-      </body>
+      <body className="min-h-full bg-paper text-ink">{children}</body>
     </html>
   );
 }

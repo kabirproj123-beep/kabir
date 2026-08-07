@@ -7,13 +7,9 @@
  * matter — call, or request a callback — need to be reachable at all times.
  */
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { site } from "@/lib/content";
 
 export function MobileBar() {
-  const pathname = usePathname();
-  if (pathname?.startsWith("/admin")) return null;
-
   return (
     <>
       {/* spacer so the bar never covers the last of the page content */}
