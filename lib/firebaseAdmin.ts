@@ -28,6 +28,35 @@ function hasCredentialEnv(): boolean {
   );
 }
 
+/**
+ * Put a PEM key back together however the dashboard mangled it. Pasting a
+ * service-account key into a hosting UI reliably produces one of: literal `\n`
+ * two-character escapes, wrapping quotes that become part of the value, `\r\n`,
+ * or the whole key base64-encoded to dodge newlines entirely.
+ */
+function normalisePrivateKey(raw: string): string {
+  let key = raw.trim();
+
+  if (
+    (key.startsWith('"') && key.endsWith('"')) ||
+    (key.startsWith("'") && key.endsWith("'"))
+  ) {
+    key = key.slice(1, -1);
+  }
+
+  // A key that arrived base64-encoded has no PEM header until it's decoded.
+  if (!key.includes("BEGIN")) {
+    try {
+      const decoded = Buffer.from(key, "base64").toString("utf8");
+      if (decoded.includes("BEGIN")) key = decoded;
+    } catch {
+      /* not base64 — fall through and let cert() report it */
+    }
+  }
+
+  return key.replace(/\\r/g, "").replace(/\\n/g, "\n").replace(/\r/g, "");
+}
+
 /** Returns a Firestore handle, or null when credentials are absent. */
 export function getAdminDb(): Firestore | null {
   if (cached !== undefined) return cached;
@@ -46,10 +75,9 @@ export function getAdminDb(): Firestore | null {
       ? getApps()[0]!
       : initializeApp({
           credential: cert({
-            projectId: process.env.FIREBASE_PROJECT_ID,
-            clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-            // Vercel/CI store the key with escaped newlines; restore them.
-            privateKey: process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+            projectId: process.env.FIREBASE_PROJECT_ID?.trim(),
+            clientEmail: process.env.FIREBASE_CLIENT_EMAIL?.trim(),
+            privateKey: normalisePrivateKey(process.env.FIREBASE_PRIVATE_KEY!),
           }),
         });
     cached = getFirestore(app);
