@@ -2,7 +2,6 @@
 
 import { redirect } from "next/navigation";
 import { startSession } from "@/lib/adminAuth";
-import { adminBase } from "@/lib/adminNav";
 import { authenticate, countAdmins, createAdmin } from "@/lib/adminUsers";
 
 export async function login(_prev: string | null, formData: FormData): Promise<string | null> {
@@ -13,7 +12,7 @@ export async function login(_prev: string | null, formData: FormData): Promise<s
   if (!result.ok) return result.error;
 
   await startSession(result.value.username);
-  redirect((await adminBase()) || "/");
+  redirect("/admin");
 }
 
 /**
@@ -35,5 +34,5 @@ export async function bootstrapAdmin(
   if (!result.ok) return result.error;
 
   await startSession(result.value.username);
-  redirect((await adminBase()) || "/");
+  redirect("/admin");
 }

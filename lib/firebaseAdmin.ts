@@ -15,7 +15,12 @@ import { getFirestore, type Firestore } from "firebase-admin/firestore";
 
 let cached: Firestore | null | undefined;
 
+/** True only when a Firestore handle can actually be built. */
 export function isFirebaseConfigured(): boolean {
+  return getAdminDb() !== null;
+}
+
+function hasCredentialEnv(): boolean {
   return Boolean(
     process.env.FIREBASE_PROJECT_ID &&
       process.env.FIREBASE_CLIENT_EMAIL &&
@@ -27,7 +32,11 @@ export function isFirebaseConfigured(): boolean {
 export function getAdminDb(): Firestore | null {
   if (cached !== undefined) return cached;
 
-  if (!isFirebaseConfigured()) {
+  if (!hasCredentialEnv()) {
+    console.error(
+      "[firebase] FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL and FIREBASE_PRIVATE_KEY must all " +
+        "be set. Admin sign-in and lead capture need them.",
+    );
     cached = null;
     return cached;
   }
@@ -45,7 +54,9 @@ export function getAdminDb(): Firestore | null {
         });
     cached = getFirestore(app);
   } catch (err) {
-    console.error("Firebase admin init failed; falling back to local store:", err);
+    // Almost always a mangled FIREBASE_PRIVATE_KEY: it must keep its literal
+    // \n escapes, header and footer lines included.
+    console.error("[firebase] Could not initialise the Admin SDK:", err);
     cached = null;
   }
   return cached;

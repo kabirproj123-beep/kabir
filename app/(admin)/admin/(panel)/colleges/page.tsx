@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { adminBase, adminHref } from "@/lib/adminNav";
 import { collegesSource, getAllColleges } from "@/lib/collegeStore";
 import { hasVerifiedFee, formatINR, selectColleges, STREAMS } from "@/lib/colleges";
 import DeleteCollegeButton from "./DeleteCollegeButton";
@@ -25,7 +24,6 @@ function Fee({ value, verified }: { value: number | null | undefined; verified: 
 export default async function AdminCollegesPage(props: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
-  const base = await adminBase();
   const sp = await props.searchParams;
   const one = (k: string) => (Array.isArray(sp[k]) ? sp[k][0] : sp[k]) as string | undefined;
 
@@ -42,8 +40,8 @@ export default async function AdminCollegesPage(props: {
   const page = Math.min(Math.max(1, Number(one("page")) || 1), pageCount);
   const rows = results.slice((page - 1) * PER_PAGE, page * PER_PAGE);
 
-  const listHref = adminHref(base, "/colleges");
-  const editHref = (slug: string) => adminHref(base, `/colleges/${slug}`);
+  const listHref = "/admin/colleges";
+  const editHref = (slug: string) => `/admin/colleges/${slug}`;
   const filtered = q !== "" || stream !== "All";
 
   const action =
@@ -56,7 +54,7 @@ export default async function AdminCollegesPage(props: {
         sub={`${all.length} in the catalogue`}
         actions={
           <Link
-            href={adminHref(base, "/colleges/new")}
+            href="/admin/colleges/new"
             className="btn btn-primary px-4 py-2 text-sm"
           >
             Add college

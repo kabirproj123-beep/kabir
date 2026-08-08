@@ -109,14 +109,16 @@ export async function createLead(input: NewLead): Promise<Lead> {
   throw new Error("Firebase is not configured. Leads require Firestore.");
 }
 
+/**
+ * Empty rather than throwing: the admin page has a banner for exactly this
+ * case, and it can't show it if reading the list takes the render down.
+ */
 export async function listLeads(limit = 500): Promise<Lead[]> {
   const db = getAdminDb();
-  if (db) {
-    const snap = await db.collection(COLLECTION).orderBy("createdAt", "desc").limit(limit).get();
-    return snap.docs.map((d) => d.data() as Lead);
-  }
+  if (!db) return [];
 
-  throw new Error("Firebase is not configured. Leads require Firestore.");
+  const snap = await db.collection(COLLECTION).orderBy("createdAt", "desc").limit(limit).get();
+  return snap.docs.map((d) => d.data() as Lead);
 }
 
 export async function updateLeadStatus(id: string, status: LeadStatus): Promise<void> {

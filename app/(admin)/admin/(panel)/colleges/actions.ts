@@ -2,7 +2,6 @@
 
 import { redirect } from "next/navigation";
 import { requireAdmin } from "@/lib/adminAuth";
-import { adminBase, adminHref } from "@/lib/adminNav";
 import { deleteCollege, saveCollege } from "@/lib/collegeStore";
 
 /**
@@ -30,9 +29,8 @@ export async function saveCollegeAction(
   const result = await saveCollege(payload, { previousSlug, by: me.username });
   if (!result.ok) return result.error;
 
-  const list = adminHref(await adminBase(), "/colleges");
   // redirect() throws, so it must sit outside the try above.
-  redirect(`${list}?saved=${encodeURIComponent(result.value.slug)}`);
+  redirect(`/admin/colleges?saved=${encodeURIComponent(result.value.slug)}`);
 }
 
 export async function deleteCollegeAction(
@@ -45,6 +43,5 @@ export async function deleteCollegeAction(
   const result = await deleteCollege(slug);
   if (!result.ok) return result.error;
 
-  const list = adminHref(await adminBase(), "/colleges");
-  redirect(`${list}?deleted=${encodeURIComponent(slug)}`);
+  redirect(`/admin/colleges?deleted=${encodeURIComponent(slug)}`);
 }

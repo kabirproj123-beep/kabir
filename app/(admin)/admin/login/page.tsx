@@ -1,7 +1,6 @@
 import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { currentAdmin } from "@/lib/adminAuth";
-import { adminBase } from "@/lib/adminNav";
 import { countAdmins, isFirebaseConfigured } from "@/lib/adminUsers";
 import BootstrapAdminForm from "./BootstrapAdminForm";
 import LoginForm from "./LoginForm";
@@ -44,20 +43,34 @@ function Card({
 }
 
 export default async function AdminLoginPage() {
-  if (await currentAdmin()) redirect((await adminBase()) || "/");
+  if (await currentAdmin()) redirect("/admin");
+
+  // Anyone can load this page, so it never says how the site is put together.
+  // The detail goes to the server log, where it's of use.
+  const unavailable = (
+    <Card title="Sign-in is unavailable" sub="Please try again in a few minutes." />
+  );
 
   if (!isFirebaseConfigured()) {
-    // Anyone can load this page, so it says nothing about how the site is put
-    // together. The detail goes to the server log, where it's of use.
     console.error(
-      "[admin] Sign-in unavailable: FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL and " +
-        "FIREBASE_PRIVATE_KEY must all be set. Restart after setting them.",
+      "[admin] Sign-in unavailable: no Firestore handle. Check FIREBASE_PROJECT_ID, " +
+        "FIREBASE_CLIENT_EMAIL and FIREBASE_PRIVATE_KEY, then redeploy.",
     );
-    return <Card title="Sign-in is unavailable" sub="Please try again in a few minutes." />;
+    return unavailable;
+  }
+
+  // Reading the account list is the first real call to Firestore, so it's where
+  // a credential that loads but can't read shows up.
+  let accounts: number;
+  try {
+    accounts = await countAdmins();
+  } catch (err) {
+    console.error("[admin] Sign-in unavailable: Firestore rejected the read:", err);
+    return unavailable;
   }
 
   // Open to anyone only while there are no accounts at all — see login/actions.ts.
-  if ((await countAdmins()) === 0) {
+  if (accounts === 0) {
     return (
       <Card
         title="Create the first admin"

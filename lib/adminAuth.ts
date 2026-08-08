@@ -65,15 +65,24 @@ export const currentAdmin = cache(async (): Promise<AdminSummary | null> => {
   const token = (await cookies()).get(ADMIN_COOKIE)?.value;
   if (!token) return null;
 
-  const snap = await sessions().doc(tokenId(token)).get();
-  if (!snap.exists) return null;
+  try {
+    const snap = await sessions().doc(tokenId(token)).get();
+    if (!snap.exists) return null;
 
-  const { username, expiresAt } = snap.data() as Session;
-  if (Date.parse(expiresAt) <= Date.now()) {
-    await snap.ref.delete().catch(() => {});
+    const { username, expiresAt } = snap.data() as Session;
+    if (Date.parse(expiresAt) <= Date.now()) {
+      await snap.ref.delete().catch(() => {});
+      return null;
+    }
+    return getAdmin(username);
+  } catch (err) {
+    // Credentials that load but can't read: the service account is missing the
+    // Firestore role, points at another project, or the API is disabled. Read
+    // as signed-out so the panel redirects to a page that explains itself,
+    // instead of throwing through the render as an opaque digest.
+    console.error("[admin] Could not read the session from Firestore:", err);
     return null;
   }
-  return getAdmin(username);
 });
 
 /**

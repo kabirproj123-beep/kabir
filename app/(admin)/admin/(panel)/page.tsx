@@ -1,6 +1,5 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { adminBase, adminHref } from "@/lib/adminNav";
 import { listLeads, storageMode, LEAD_STATUSES, type Lead, type LeadStatus } from "@/lib/leads";
 import { setStatus } from "./actions";
 import PageHeader from "./_components/PageHeader";
@@ -77,7 +76,6 @@ function Meta({ lead }: { lead: Lead }) {
 export default async function EnquiriesPage(props: {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
 }) {
-  const base = await adminBase();
   const sp = await props.searchParams;
   const one = (k: string) => (Array.isArray(sp[k]) ? sp[k][0] : sp[k]) as string | undefined;
 
@@ -93,7 +91,7 @@ export default async function EnquiriesPage(props: {
     (l) => new Date(l.createdAt).toDateString() === new Date().toDateString(),
   ).length;
 
-  const href = adminHref(base, "/");
+  const href = "/admin";
   const tabs = [
     { key: undefined, label: "All", n: leads.length },
     ...LEAD_STATUSES.map((s) => ({

@@ -3,19 +3,12 @@
 import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { endSession, requireAdmin } from "@/lib/adminAuth";
-import { adminBase, adminHref } from "@/lib/adminNav";
 import { createAdmin, deleteAdmin, setAdminPassword } from "@/lib/adminUsers";
 import { updateLeadStatus, type LeadStatus, LEAD_STATUSES } from "@/lib/leads";
 
-/**
- * `revalidatePath` takes the internal route path, which is always /admin/… even
- * when the browser is on the admin subdomain. Redirects and links take the
- * public prefix from `adminBase()`. The two are not interchangeable.
- */
-
 export async function logout(): Promise<void> {
   await endSession();
-  redirect(adminHref(await adminBase(), "/login"));
+  redirect("/admin/login");
 }
 
 /* --------------------------------- leads -------------------------------- */

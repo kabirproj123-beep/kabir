@@ -7,10 +7,6 @@ import { logout } from "../actions";
 
 /**
  * The panel's frame: a fixed rail on desktop, an off-canvas drawer under it.
- *
- * Hrefs are built from `base` because the same routes answer on two shapes —
- * `admin.example.com/colleges` and `localhost:3000/admin/colleges`. See
- * lib/adminNav.ts.
  */
 
 type Item = { path: string; label: string; icon: React.ReactNode };
@@ -58,20 +54,16 @@ const NAV: Item[] = [
 ];
 
 export default function AdminShell({
-  base,
   me,
-  publicHref,
   children,
 }: {
-  base: string;
   me: { name: string; username: string };
-  publicHref: string;
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  const hrefFor = (path: string) => (path === "/" ? base || "/" : `${base}${path}`);
+  const hrefFor = (path: string) => (path === "/" ? "/admin" : `/admin${path}`);
   const isActive = (path: string) => {
     const href = hrefFor(path);
     return path === "/" ? pathname === href : pathname === href || pathname.startsWith(`${href}/`);
@@ -121,8 +113,8 @@ export default function AdminShell({
           <p className="truncate text-sm font-semibold">{me.name}</p>
           <p className="truncate text-xs text-faint">@{me.username}</p>
         </div>
-        <a
-          href={publicHref}
+        <Link
+          href="/"
           className="flex items-center gap-2 rounded-lg px-2 py-2 text-sm text-on-navy-dim hover:bg-white/5 hover:text-white"
         >
           <svg viewBox="0 0 24 24" className="size-4" {...stroke}>
@@ -130,7 +122,7 @@ export default function AdminShell({
             <path d="M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4" />
           </svg>
           View site
-        </a>
+        </Link>
         <form action={logout}>
           <button className="flex w-full items-center gap-2 rounded-lg px-2 py-2 text-sm text-on-navy-dim hover:bg-white/5 hover:text-white">
             <svg viewBox="0 0 24 24" className="size-4" {...stroke}>

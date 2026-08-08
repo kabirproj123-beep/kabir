@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { adminBase, adminHref } from "@/lib/adminNav";
 import { getCollege } from "@/lib/collegeStore";
 import CollegeForm from "../CollegeForm";
 import DeleteCollegeButton from "../DeleteCollegeButton";
@@ -14,8 +13,6 @@ export default async function EditCollegePage(props: { params: Promise<{ slug: s
   const { slug } = await props.params;
   const college = await getCollege(slug);
   if (!college) notFound();
-
-  const list = adminHref(await adminBase(), "/colleges");
 
   return (
     <>
@@ -43,7 +40,7 @@ export default async function EditCollegePage(props: { params: Promise<{ slug: s
             <Link href={`/colleges/${college.slug}`} className="btn btn-ghost px-3 py-2 text-sm">
               View page
             </Link>
-            <Link href={list} className="btn btn-ghost px-3 py-2 text-sm">
+            <Link href="/admin/colleges" className="btn btn-ghost px-3 py-2 text-sm">
               Back
             </Link>
             <DeleteCollegeButton
@@ -56,7 +53,7 @@ export default async function EditCollegePage(props: { params: Promise<{ slug: s
         }
       />
       <div className="p-4 sm:p-6">
-        <CollegeForm college={college} mode="edit" listHref={list} />
+        <CollegeForm college={college} mode="edit" listHref="/admin/colleges" />
       </div>
     </>
   );
