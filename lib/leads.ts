@@ -16,6 +16,7 @@ export const LEAD_SOURCES = [
   "college-enquiry",
   "newsletter",
   "contact",
+  "enquiry",
 ] as const;
 export type LeadSource = (typeof LEAD_SOURCES)[number];
 

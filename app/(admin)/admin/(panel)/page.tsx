@@ -17,6 +17,7 @@ const SOURCE_LABEL: Record<string, string> = {
   "college-enquiry": "College enquiry",
   newsletter: "Newsletter",
   contact: "Contact",
+  enquiry: "Site enquiry",
 };
 
 /** chip styles and the row's left edge, so status reads without being read. */

@@ -24,7 +24,7 @@ const NAV: Item[] = [
     path: "/",
     label: "Enquiries",
     icon: (
-      <svg viewBox="0 0 24 24" className="size-[18px]" {...stroke}>
+      <svg viewBox="0 0 24 24" className="size-4.5" {...stroke}>
         <path d="M3 13h4l2 3h6l2-3h4" />
         <path d="M5 5h14l2 8v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4Z" />
       </svg>
@@ -34,7 +34,7 @@ const NAV: Item[] = [
     path: "/colleges",
     label: "Colleges",
     icon: (
-      <svg viewBox="0 0 24 24" className="size-[18px]" {...stroke}>
+      <svg viewBox="0 0 24 24" className="size-4.5" {...stroke}>
         <path d="M12 3 3 8h18Z" />
         <path d="M5 8v11M19 8v11M9.5 8v11M14.5 8v11M3 19h18" />
       </svg>
@@ -44,7 +44,7 @@ const NAV: Item[] = [
     path: "/team",
     label: "Team",
     icon: (
-      <svg viewBox="0 0 24 24" className="size-[18px]" {...stroke}>
+      <svg viewBox="0 0 24 24" className="size-4.5" {...stroke}>
         <circle cx="9" cy="8" r="3.2" />
         <path d="M3 20a6 6 0 0 1 12 0" />
         <path d="M16 5.5a3.2 3.2 0 0 1 0 5M18 20a6 6 0 0 0-2-4.5" />
