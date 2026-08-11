@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { site } from "@/lib/content";
+import { LinkProgress } from "./LinkProgress";
 
 const NAV = [
   { label: "Colleges", href: "/colleges" },
@@ -49,6 +50,7 @@ export function Header() {
                 }`}
               >
                 {item.label}
+                <LinkProgress />
               </Link>
             );
           })}
@@ -87,6 +89,7 @@ export function Header() {
                 className="rounded-lg px-3 py-2.5 text-sm font-medium text-ink hover:bg-paper-2"
               >
                 {item.label}
+                <LinkProgress />
               </Link>
             ))}
           </div>

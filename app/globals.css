@@ -204,6 +204,101 @@ h1, h2, h3, h4, h5, .font-display {
 /* Scroll-margin so in-page nav clears the sticky header */
 [id] { scroll-margin-top: 6rem; }
 
+/* ---------------------------------------------------------------------------
+   Pointer affordance
+
+   Everything that responds to a click says so. `button` defaults to the arrow
+   cursor in every browser, which reads as "not clickable" on a flat UI like
+   this one — the buttons here have no bevel to give the game away.
+   Disabled controls keep the not-allowed cursor.
+--------------------------------------------------------------------------- */
+button,
+summary,
+select,
+label:has(input[type="checkbox"], input[type="radio"]),
+[role="button"],
+[role="tab"],
+[role="option"],
+a[href] {
+  cursor: pointer;
+}
+button:disabled,
+[aria-disabled="true"],
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+/* ---------------------------------------------------------------------------
+   Modal dialogs
+
+   Native <dialog> starts as display:none, so a plain transition has nothing to
+   animate from. @starting-style gives the open state an entry frame; keeping
+   `display` and `overlay` in the transition list lets the browser hold the
+   element in the top layer while it animates out.
+--------------------------------------------------------------------------- */
+dialog.modal,
+dialog.modal::backdrop {
+  transition:
+    opacity 0.28s var(--ease-out-soft),
+    translate 0.28s var(--ease-out-soft),
+    display 0.28s allow-discrete,
+    overlay 0.28s allow-discrete;
+}
+dialog.modal {
+  opacity: 0;
+  translate: 0 1rem;
+}
+dialog.modal[open] {
+  opacity: 1;
+  translate: 0 0;
+}
+@starting-style {
+  dialog.modal[open] {
+    opacity: 0;
+    translate: 0 1rem;
+  }
+}
+dialog.modal::backdrop { opacity: 0; }
+dialog.modal[open]::backdrop { opacity: 1; }
+@starting-style {
+  dialog.modal[open]::backdrop { opacity: 0; }
+}
+
+/* ---------------------------------------------------------------------------
+   Loading skeletons
+
+   Shown by the route-level loading.tsx files while a server render is in
+   flight, so a navigation paints something immediately instead of leaving the
+   previous page on screen with no sign anything happened.
+--------------------------------------------------------------------------- */
+@keyframes skeleton-pulse {
+  50% { opacity: 0.45; }
+}
+.skeleton {
+  border-radius: 0.5rem;
+  background: var(--color-paper-3);
+  animation: skeleton-pulse 1.4s var(--ease-out-soft) infinite;
+}
+
+/* Indeterminate bar for the top-of-page navigation indicator. */
+@keyframes nav-progress {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+.nav-progress::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-brand-600) 40%,
+    var(--color-brand) 60%,
+    transparent
+  );
+  animation: nav-progress 1s var(--ease-out-soft) infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .marquee-track { animation: none; }

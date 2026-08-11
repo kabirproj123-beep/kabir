@@ -8,37 +8,12 @@
  */
 import "server-only";
 import { getAdminDb, isFirebaseConfigured } from "./firebaseAdmin";
+import { LEAD_SOURCES, type Lead, type LeadSource, type LeadStatus, type NewLead } from "./leadTypes";
 
-export const LEAD_SOURCES = [
-  "compare-unlock",
-  "loan-calculator",
-  "counselling",
-  "college-enquiry",
-  "newsletter",
-  "contact",
-  "enquiry",
-] as const;
-export type LeadSource = (typeof LEAD_SOURCES)[number];
-
-export const LEAD_STATUSES = ["new", "contacted", "converted", "closed"] as const;
-export type LeadStatus = (typeof LEAD_STATUSES)[number];
-
-export type Lead = {
-  id: string;
-  name: string;
-  phone: string;
-  email: string | null;
-  city: string | null;
-  course: string | null;
-  /** Free-form extras per source — income band, compared colleges, message. */
-  meta: Record<string, string>;
-  source: LeadSource;
-  collegeSlug: string | null;
-  status: LeadStatus;
-  createdAt: string; // ISO 8601
-};
-
-export type NewLead = Omit<Lead, "id" | "createdAt" | "status">;
+// Re-exported so server callers keep importing everything from one place.
+// Client components must import from ./leadTypes instead — this module is
+// server-only and reaches firebase-admin.
+export * from "./leadTypes";
 
 const COLLECTION = "leads";
 

@@ -8,7 +8,7 @@
  * preferred city) without forking the component.
  */
 import { useState, useTransition } from "react";
-import type { LeadSource } from "@/lib/leads";
+import type { LeadSource } from "@/lib/leadTypes";
 
 export type ExtraField = {
   name: string;

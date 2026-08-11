@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { LinkProgress } from "@/components/LinkProgress";
 import { logout } from "../actions";
 
 /**
@@ -103,6 +104,7 @@ export default function AdminShell({
             >
               <span className={active ? "text-brand" : "text-faint"}>{item.icon}</span>
               {item.label}
+              <LinkProgress />
             </Link>
           );
         })}
