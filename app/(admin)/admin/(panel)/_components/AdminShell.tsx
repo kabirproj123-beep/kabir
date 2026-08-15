@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { LinkProgress } from "@/components/LinkProgress";
+import { site } from "@/lib/content";
 import { logout } from "../actions";
 
 /**
@@ -78,10 +79,12 @@ export default function AdminShell({
         className="flex items-center gap-2.5 border-b border-line-navy px-5 py-4"
       >
         <span className="grid size-8 shrink-0 place-items-center rounded-lg bg-brand-600 font-display text-base font-extrabold">
-          K
+          {site.name.charAt(0)}
         </span>
         <span className="min-w-0">
-          <span className="block font-display text-sm font-bold leading-tight">Kabir</span>
+          <span className="block truncate font-display text-sm font-bold leading-tight">
+            {site.name}
+          </span>
           <span className="block text-[0.68rem] uppercase tracking-[0.14em] text-brand">
             Admin
           </span>

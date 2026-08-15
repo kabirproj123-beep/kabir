@@ -52,7 +52,7 @@ export type FaqItem = {
 const FOUNDED = 2013;
 
 export const site = {
-  name: "Meridian",
+  name: "Marshall Edutech",
   tagline: "Maharashtra college discovery & admissions",
   founded: FOUNDED,
   yearsGuiding: `${new Date().getFullYear() - FOUNDED}+`,
@@ -61,7 +61,7 @@ export const site = {
   location: "Pune, Maharashtra",
   phone: "+91 90000 00000",
   whatsapp: "+919000000000",
-  email: "hello@meridian.example",
+  email: "hello@marshalledutech.example",
   instagram: "https://instagram.com",
   address: "Level 4, FC Road, Shivajinagar, Pune 411005",
 };
@@ -209,7 +209,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "t1",
     quote:
-      "I came in fixated on one plan. Meridian pushed back with data, and I ended up somewhere better than my dream school — with a scholarship I didn't know I qualified for.",
+      "I came in fixated on one plan. Marshall Edutech pushed back with data, and I ended up somewhere better than my dream school — with a scholarship I didn't know I qualified for.",
     name: "Ananya R.",
     detail: "MS Computer Science · Purdue",
     avatar: U("1494790108377-be9c29b29330"),

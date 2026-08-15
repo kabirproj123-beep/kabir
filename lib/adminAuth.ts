@@ -13,7 +13,7 @@ import { cookies } from "next/headers";
 import { getAdminDb } from "./firebaseAdmin";
 import { NOT_CONFIGURED, getAdmin, isFirebaseConfigured, type AdminSummary } from "./adminUsers";
 
-export const ADMIN_COOKIE = "kabir_admin";
+export const ADMIN_COOKIE = "marshall_admin";
 
 const TTL_HOURS = 12;
 

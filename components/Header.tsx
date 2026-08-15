@@ -27,9 +27,9 @@ export function Header() {
           <span className="grid size-9 place-items-center rounded-lg bg-brand-600 font-display text-lg font-extrabold text-white">
             {site.name.charAt(0)}
           </span>
-          <span className="font-display text-[0.95rem] font-extrabold leading-none tracking-tight">
-            <span className="block">{site.name.toUpperCase()}</span>
-            <span className="block text-[0.62rem] font-semibold tracking-[0.18em] text-brand-700">
+          <span className="font-display text-[0.82rem] font-extrabold leading-none tracking-tight">
+            <span className="block whitespace-nowrap">{site.name.toUpperCase()}</span>
+            <span className="mt-0.5 block text-[0.58rem] font-semibold tracking-[0.16em] text-brand-700">
               MAHARASHTRA
             </span>
           </span>

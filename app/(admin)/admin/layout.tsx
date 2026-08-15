@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
+import { site } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: { default: "Admin", template: "%s · Kabir admin" },
+  title: { default: "Admin", template: `%s · ${site.name} admin` },
   robots: { index: false, follow: false },
 };
 

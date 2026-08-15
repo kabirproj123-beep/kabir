@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { currentAdmin } from "@/lib/adminAuth";
+import { site } from "@/lib/content";
 import { countAdmins, isFirebaseConfigured } from "@/lib/adminUsers";
 import BootstrapAdminForm from "./BootstrapAdminForm";
 import LoginForm from "./LoginForm";
@@ -22,10 +23,10 @@ function Card({
       <div className="w-full max-w-sm">
         <div className="flex items-center gap-2.5">
           <span className="grid size-9 place-items-center rounded-lg bg-brand-600 font-display text-lg font-extrabold text-white">
-            K
+            {site.name.charAt(0)}
           </span>
           <span>
-            <span className="block font-display text-sm font-bold leading-tight">Kabir</span>
+            <span className="block font-display text-sm font-bold leading-tight">{site.name}</span>
             <span className="block text-[0.68rem] uppercase tracking-[0.14em] text-brand-700">
               Admin
             </span>

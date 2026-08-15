@@ -8,8 +8,9 @@ colleges; every tool funnels into a lead form; the client reads the leads at
 Modelled on [promoteducation.com](https://promoteducation.com) — same page
 structure and funnel, scoped to one state and backed by our own scraped dataset.
 
-> **Draft note:** "Meridian" is a stand-in brand name. Swap `site` in
-> `lib/content.ts` for the client's real name, phone, email and address.
+> **Branding:** the client is **Marshall Edutech**. The name is set once in
+> `site` in `lib/content.ts` and read everywhere else from there — the phone,
+> email and address in that object are still placeholders.
 
 ## Run it
 
