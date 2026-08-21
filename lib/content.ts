@@ -59,11 +59,12 @@ export const site = {
   description:
     "Compare every major college in Maharashtra — Engineering, Medical, Management and Law. Real fees, placements and rankings, plus free counselling from admission experts.",
   location: "Pune, Maharashtra",
-  phone: "+91 90000 00000",
-  whatsapp: "+919000000000",
-  email: "hello@marshalledutech.example",
-  instagram: "https://instagram.com",
-  address: "Level 4, FC Road, Shivajinagar, Pune 411005",
+  phone: "+91 91565 66885",
+  whatsapp: "+919156566885",
+  email: "marshaleducationconsultancy@gmail.com",
+  // No Instagram account yet — leave empty so nothing links to a dead profile.
+  instagram: "",
+  address: "Office No. 428, The Address Commercia, Wakad, Pune, Maharashtra",
 };
 
 export const nav = [
